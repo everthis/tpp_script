@@ -24,7 +24,7 @@ const orderUrl =
 
 const stringify = JSON.stringify
 
-function a(e) {
+function calcToken(e) {
   function t(e, t) {
     return (e << t) | (e >>> (32 - t))
   }
@@ -232,9 +232,9 @@ function a(e) {
   return U.toLowerCase()
 }
 function sign(data, ts) {
-  // data: string
+  // data: JSON string
 
-  return a(getToken() + '&' + ts + '&' + appKey + '&' + data)
+  return calcToken(getToken() + '&' + ts + '&' + appKey + '&' + data)
 }
 
 function getToken() {

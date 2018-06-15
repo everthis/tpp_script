@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-notifier": "^5.2.1"
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^6.0.0",
+    "form-data": "^2.3.2",
+    "get-random-values": "^1.2.0",
+    "node-fetch": "^2.1.2",
+    "node-notifier": "^5.2.1",
+    "puppeteer": "^1.5.0"
   }
 }
