@@ -7,7 +7,7 @@ const USER_AGENT =
 const TB_LOGIN_URL = 'https://login.m.taobao.com/login.htm'
 const TB_USER_SIMPLE_INFO_URL =
   'http://h5api.m.taobao.com/h5/mtop.taobao.mclaren.getmytaobaopage/1.0/'
-const GET_SCHEDULE_SEAT_URL =
+const TPP_SCHEDULE_SEAT_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopseatapi.getscheduleseat/7.5/'
 const LOCK_SEAT_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopseatapi.asylockseat/5.0/'
@@ -17,6 +17,10 @@ const PAY_CHECK_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopmarketingapi.cacpaymentsolution/7.2/'
 const ORDER_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtoporderapi.ordering/5.0/'
+const TPP_USER_SIMPLE_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.user.getusersimple/1.0/'
+const SET_MISSING_TOKEN_URL =
+  'http://h5api.m.taobao.com/h5/mtop.taobao.baichuan.smb.get/1.0/'
 
 module.exports = {
   APP_KEY,
@@ -27,6 +31,8 @@ module.exports = {
   PAY_CHECK_URL,
   USER_SIMPLE_URL,
   LOGIN_IFRAME_URL,
-  GET_SCHEDULE_SEAT_URL,
+  TPP_USER_SIMPLE_URL,
+  TPP_SCHEDULE_SEAT_URL,
+  SET_MISSING_TOKEN_URL,
   TB_USER_SIMPLE_INFO_URL
 }

@@ -1,0 +1,6 @@
+/**
+ * tbUserName
+ * tbUserPwd
+ * scheduleId
+ * ticketNum
+ */
