@@ -34,6 +34,7 @@ async function processPossibleMissingToken(arr, ctx) {
     const dataStr = JSON.stringify(dataObj)
     const fd = new FormData()
     fd.append('data', dataStr)
+    console.log('trying to fetch missing token.')
     return await fetch(
       `${SET_MISSING_TOKEN_URL}?${querystring.stringify(qsObj)}`,
       {

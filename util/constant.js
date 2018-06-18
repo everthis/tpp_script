@@ -5,6 +5,8 @@ const APP_KEY = '12574478'
 const USER_AGENT =
   'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1'
 const TB_LOGIN_URL = 'https://login.m.taobao.com/login.htm'
+const MY_TB_PAGE_URL =
+  'http://h5.m.taobao.com/mlapp/mytaobao.html#mlapp-mytaobao'
 const TB_USER_SIMPLE_INFO_URL =
   'http://h5api.m.taobao.com/h5/mtop.taobao.mclaren.getmytaobaopage/1.0/'
 const TPP_SCHEDULE_SEAT_URL =
@@ -29,6 +31,7 @@ module.exports = {
   TB_LOGIN_URL,
   LOCK_SEAT_URL,
   PAY_CHECK_URL,
+  MY_TB_PAGE_URL,
   USER_SIMPLE_URL,
   LOGIN_IFRAME_URL,
   TPP_USER_SIMPLE_URL,

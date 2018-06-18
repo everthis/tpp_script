@@ -1,6 +1,6 @@
 require('dotenv').config()
 const puppeteer = require('puppeteer')
-const { TB_LOGIN_URL, USER_AGENT } = require('./util/constant')
+const { TB_LOGIN_URL, USER_AGENT, MY_TB_PAGE_URL } = require('./util/constant')
 const cookiesArrToStr = require('./util/cookiesArrToStr')
 const processPossibleMissingToken = require('./processPossibleMissingToken')
 const TB_USERNAME = process.env.TB_USERNAME
@@ -26,17 +26,13 @@ async function headlessLogin() {
     TB_PASSWORD
   )
   await page.waitForNavigation()
+  await page.goto(MY_TB_PAGE_URL, {
+    waitUntil: 'networkidle2'
+  })
   const cookies = await page.cookies()
-  //   const mH5TokenExist = cookies.find(el => el.name === '_m_h5_tk')
-  //   console.log('prev')
-  //   console.log(mH5TokenExist)
-  await processPossibleMissingToken(cookies)
-  const processedCookies = await page.cookies()
-  //   const mH5Token = processedCookies.find(el => el.name === '_m_h5_tk')
-  //   console.log('current')
-  //   console.log(mH5Token)
+
   await browser.close()
-  return cookiesArrToStr(processedCookies)
+  return cookiesArrToStr(cookies)
 }
 
 module.exports = headlessLogin

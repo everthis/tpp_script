@@ -39,7 +39,9 @@ function calcToken(e) {
       n & i
         ? 2147483648 ^ a ^ o ^ r
         : n | i
-          ? 1073741824 & a ? 3221225472 ^ a ^ o ^ r : 1073741824 ^ a ^ o ^ r
+          ? 1073741824 & a
+            ? 3221225472 ^ a ^ o ^ r
+            : 1073741824 ^ a ^ o ^ r
           : a ^ o ^ r
     )
   }
@@ -72,7 +74,7 @@ function calcToken(e) {
       var t,
         n = e.length,
         i = n + 8,
-        o = (i - i % 64) / 64,
+        o = (i - (i % 64)) / 64,
         r = 16 * (o + 1),
         a = new Array(r - 1),
         s = 0,
@@ -80,12 +82,12 @@ function calcToken(e) {
       n > c;
 
     )
-      (t = (c - c % 4) / 4),
+      (t = (c - (c % 4)) / 4),
         (s = (c % 4) * 8),
         (a[t] = a[t] | (e.charCodeAt(c) << s)),
         c++
     return (
-      (t = (c - c % 4) / 4),
+      (t = (c - (c % 4)) / 4),
       (s = (c % 4) * 8),
       (a[t] = a[t] | (128 << s)),
       (a[r - 2] = n << 3),
@@ -246,7 +248,7 @@ function getToken() {
 }
 var qPayload = {
   scheduleId: '533486997',
-  mobile: '13408522119',
+  mobile: '1340xxxxxxxx',
   seatIDs: '03011113|03011114|03011112',
   seatNames: '11排11座|11排12座|11排10座',
   platform: '8',
@@ -343,7 +345,7 @@ function order() {
     useActivityFlag: '4',
     useMcardFlag: '1',
     orderExtInfo: 'sqm=a1z2r.7661912.1.1',
-    mobile: '13408522119',
+    mobile: '1340xxxxxxxx',
     platform: '8'
   }
   const payload = {
