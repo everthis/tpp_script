@@ -35,7 +35,7 @@
                 "row": "15",
                 "rowName": "14",
                 "seatId": "DS191537",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -79,7 +79,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191834",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -167,7 +167,7 @@
                 "row": "1",
                 "rowName": "1",
                 "seatId": "DS190124",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -178,7 +178,7 @@
                 "row": "6",
                 "rowName": "6",
                 "seatId": "DS190610",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -222,7 +222,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192615",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -277,7 +277,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192328",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -299,7 +299,7 @@
                 "row": "16",
                 "rowName": "15",
                 "seatId": "DS191634",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -310,7 +310,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192432",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -343,7 +343,7 @@
                 "row": "15",
                 "rowName": "14",
                 "seatId": "DS191536",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -409,7 +409,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192033",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -431,7 +431,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190932",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -475,7 +475,7 @@
                 "row": "21",
                 "rowName": "20",
                 "seatId": "DS192108",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -530,7 +530,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191435",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -541,7 +541,7 @@
                 "row": "16",
                 "rowName": "15",
                 "seatId": "DS191632",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -563,7 +563,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190933",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -662,7 +662,7 @@
                 "row": "8",
                 "rowName": "8",
                 "seatId": "DS190807",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -838,7 +838,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191935",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -904,7 +904,7 @@
                 "row": "15",
                 "rowName": "14",
                 "seatId": "DS191535",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -992,7 +992,7 @@
                 "row": "8",
                 "rowName": "8",
                 "seatId": "DS190831",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1036,7 +1036,7 @@
                 "row": "21",
                 "rowName": "20",
                 "seatId": "DS192104",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1047,7 +1047,7 @@
                 "row": "15",
                 "rowName": "14",
                 "seatId": "DS191534",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1113,7 +1113,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191804",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1157,7 +1157,7 @@
                 "row": "21",
                 "rowName": "20",
                 "seatId": "DS192106",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1201,7 +1201,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191907",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1234,7 +1234,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192434",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1245,7 +1245,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191832",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1300,7 +1300,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "DS190411",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1355,7 +1355,7 @@
                 "row": "13",
                 "rowName": "12",
                 "seatId": "DS191304",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1443,7 +1443,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192610",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1509,7 +1509,7 @@
                 "row": "22",
                 "rowName": "21",
                 "seatId": "DS192231",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1685,7 +1685,7 @@
                 "row": "17",
                 "rowName": "16",
                 "seatId": "DS191707",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1729,7 +1729,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192034",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -1960,7 +1960,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190935",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2246,7 +2246,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191806",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2290,7 +2290,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192035",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2301,7 +2301,7 @@
                 "row": "6",
                 "rowName": "6",
                 "seatId": "DS190609",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2378,7 +2378,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192627",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2455,7 +2455,7 @@
                 "row": "5",
                 "rowName": "5",
                 "seatId": "DS190509",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "DS",
@@ -2466,7 +2466,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192331",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2477,7 +2477,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191906",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2565,7 +2565,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192616",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2587,7 +2587,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192332",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2697,7 +2697,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191904",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2719,7 +2719,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191936",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2730,7 +2730,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191434",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2840,7 +2840,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192037",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -2917,7 +2917,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "DS190428",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3038,7 +3038,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192430",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3093,7 +3093,7 @@
                 "row": "8",
                 "rowName": "8",
                 "seatId": "DS190809",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3137,7 +3137,7 @@
                 "row": "21",
                 "rowName": "20",
                 "seatId": "DS192105",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3181,7 +3181,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192031",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3247,7 +3247,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190908",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3390,7 +3390,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191905",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3445,7 +3445,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191902",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3489,7 +3489,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191938",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3599,7 +3599,7 @@
                 "row": "15",
                 "rowName": "14",
                 "seatId": "DS191533",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3610,7 +3610,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192030",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3621,7 +3621,7 @@
                 "row": "11",
                 "rowName": "11",
                 "seatId": "DS191102",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "DS",
@@ -3775,7 +3775,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192310",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3830,7 +3830,7 @@
                 "row": "25",
                 "rowName": "24",
                 "seatId": "DS192527",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3841,7 +3841,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192333",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -3929,7 +3929,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192032",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4050,7 +4050,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192330",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4182,7 +4182,7 @@
                 "row": "16",
                 "rowName": "15",
                 "seatId": "DS191635",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4237,7 +4237,7 @@
                 "row": "22",
                 "rowName": "21",
                 "seatId": "DS192230",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4402,7 +4402,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192625",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4424,7 +4424,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191937",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4435,7 +4435,7 @@
                 "row": "25",
                 "rowName": "24",
                 "seatId": "DS192511",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4523,7 +4523,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "DS190410",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4545,7 +4545,7 @@
                 "row": "5",
                 "rowName": "5",
                 "seatId": "DS190530",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "DS",
@@ -4622,7 +4622,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190936",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4688,7 +4688,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191438",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4710,7 +4710,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192436",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4743,7 +4743,7 @@
                 "row": "22",
                 "rowName": "21",
                 "seatId": "DS192229",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4941,7 +4941,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192428",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -4974,7 +4974,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191807",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5040,7 +5040,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192624",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5062,7 +5062,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191803",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5128,7 +5128,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191901",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5194,7 +5194,7 @@
                 "row": "21",
                 "rowName": "20",
                 "seatId": "DS192107",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5436,7 +5436,7 @@
                 "row": "10",
                 "rowName": "10",
                 "seatId": "DS191032",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5458,7 +5458,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192433",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5623,7 +5623,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192435",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5634,7 +5634,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "DS190427",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5667,7 +5667,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192611",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5678,7 +5678,7 @@
                 "row": "17",
                 "rowName": "16",
                 "seatId": "DS191706",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5689,7 +5689,7 @@
                 "row": "10",
                 "rowName": "10",
                 "seatId": "DS191006",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "DS",
@@ -5722,7 +5722,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192429",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5744,7 +5744,7 @@
                 "row": "25",
                 "rowName": "24",
                 "seatId": "DS192512",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5810,7 +5810,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191403",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5865,7 +5865,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192628",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5920,7 +5920,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191436",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5942,7 +5942,7 @@
                 "row": "10",
                 "rowName": "10",
                 "seatId": "DS191008",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5953,7 +5953,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191833",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -5964,7 +5964,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190934",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6030,7 +6030,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192411",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6118,7 +6118,7 @@
                 "row": "8",
                 "rowName": "8",
                 "seatId": "DS190832",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6162,7 +6162,7 @@
                 "row": "7",
                 "rowName": "7",
                 "seatId": "DS190709",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6404,7 +6404,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192036",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6426,7 +6426,7 @@
                 "row": "10",
                 "rowName": "10",
                 "seatId": "DS191033",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6525,7 +6525,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "DS190429",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6591,7 +6591,7 @@
                 "row": "20",
                 "rowName": "19",
                 "seatId": "DS192038",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6712,7 +6712,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191932",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6723,7 +6723,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192431",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6888,7 +6888,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192412",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6954,7 +6954,7 @@
                 "row": "9",
                 "rowName": "9",
                 "seatId": "DS190931",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -6987,7 +6987,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192623",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7064,7 +7064,7 @@
                 "row": "8",
                 "rowName": "8",
                 "seatId": "DS190808",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7108,7 +7108,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191437",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7119,7 +7119,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191404",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7141,7 +7141,7 @@
                 "row": "15",
                 "rowName": "14",
                 "seatId": "DS191538",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7163,7 +7163,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "DS190224",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7196,7 +7196,7 @@
                 "row": "7",
                 "rowName": "7",
                 "seatId": "DS190708",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7251,7 +7251,7 @@
                 "row": "25",
                 "rowName": "24",
                 "seatId": "DS192528",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7427,7 +7427,7 @@
                 "row": "7",
                 "rowName": "7",
                 "seatId": "DS190730",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7449,7 +7449,7 @@
                 "row": "23",
                 "rowName": "22",
                 "seatId": "DS192329",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7515,7 +7515,7 @@
                 "row": "24",
                 "rowName": "23",
                 "seatId": "DS192437",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7559,7 +7559,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191933",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7757,7 +7757,7 @@
                 "row": "7",
                 "rowName": "7",
                 "seatId": "DS190735",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "DS",
@@ -7779,7 +7779,7 @@
                 "row": "16",
                 "rowName": "15",
                 "seatId": "DS191633",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7834,7 +7834,7 @@
                 "row": "11",
                 "rowName": "11",
                 "seatId": "DS191107",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -7999,7 +7999,7 @@
                 "row": "11",
                 "rowName": "11",
                 "seatId": "DS191106",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8065,7 +8065,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191903",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8230,7 +8230,7 @@
                 "row": "26",
                 "rowName": "25",
                 "seatId": "DS192612",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8340,7 +8340,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191405",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8373,7 +8373,7 @@
                 "row": "22",
                 "rowName": "21",
                 "seatId": "DS192207",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8384,7 +8384,7 @@
                 "row": "18",
                 "rowName": "17",
                 "seatId": "DS191805",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8472,7 +8472,7 @@
                 "row": "11",
                 "rowName": "11",
                 "seatId": "DS191133",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8483,7 +8483,7 @@
                 "row": "11",
                 "rowName": "11",
                 "seatId": "DS191132",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8659,7 +8659,7 @@
                 "row": "19",
                 "rowName": "18",
                 "seatId": "DS191934",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -8901,7 +8901,7 @@
                 "row": "14",
                 "rowName": "13",
                 "seatId": "DS191433",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "DS",
@@ -9011,7 +9011,7 @@
                 "row": "1",
                 "rowName": "1",
                 "seatId": "US190110",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9110,7 +9110,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190338",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9121,7 +9121,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190627",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9429,7 +9429,7 @@
                 "row": "1",
                 "rowName": "1",
                 "seatId": "US190113",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9440,7 +9440,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190441",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9506,7 +9506,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190229",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9550,7 +9550,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190436",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9704,7 +9704,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190316",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9792,7 +9792,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190317",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9913,7 +9913,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190438",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -9957,7 +9957,7 @@
                 "row": "11",
                 "rowName": "10",
                 "seatId": "US191122",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10001,7 +10001,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190633",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10045,7 +10045,7 @@
                 "row": "12",
                 "rowName": "11",
                 "seatId": "US191222",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10067,7 +10067,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190626",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10122,7 +10122,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190314",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10133,7 +10133,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190443",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10144,7 +10144,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190630",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10254,7 +10254,7 @@
                 "row": "10",
                 "rowName": "9",
                 "seatId": "US191025",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10463,7 +10463,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190237",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10650,7 +10650,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190437",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10683,7 +10683,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190340",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10738,7 +10738,7 @@
                 "row": "11",
                 "rowName": "10",
                 "seatId": "US191123",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10760,7 +10760,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190231",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10782,7 +10782,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190230",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10837,7 +10837,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190214",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10859,7 +10859,7 @@
                 "row": "1",
                 "rowName": "1",
                 "seatId": "US190109",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10914,7 +10914,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190628",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10936,7 +10936,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190924",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -10980,7 +10980,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190233",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11068,7 +11068,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190336",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11090,7 +11090,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190921",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11123,7 +11123,7 @@
                 "row": "7",
                 "rowName": "6",
                 "seatId": "US190716",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "US",
@@ -11134,7 +11134,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190238",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11277,7 +11277,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190236",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11552,7 +11552,7 @@
                 "row": "11",
                 "rowName": "10",
                 "seatId": "US191121",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11706,7 +11706,7 @@
                 "row": "1",
                 "rowName": "1",
                 "seatId": "US190136",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11860,7 +11860,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190635",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11882,7 +11882,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190435",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11893,7 +11893,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190439",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11926,7 +11926,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190632",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -11948,7 +11948,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190418",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12069,7 +12069,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190337",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12113,7 +12113,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190616",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12212,7 +12212,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190442",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12289,7 +12289,7 @@
                 "row": "7",
                 "rowName": "6",
                 "seatId": "US190728",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "US",
@@ -12399,7 +12399,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190232",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12443,7 +12443,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190440",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12498,7 +12498,7 @@
                 "row": "12",
                 "rowName": "11",
                 "seatId": "US191224",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12531,7 +12531,7 @@
                 "row": "12",
                 "rowName": "11",
                 "seatId": "US191223",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12542,7 +12542,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190318",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12575,7 +12575,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190335",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12663,7 +12663,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190241",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12718,7 +12718,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190919",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "US",
@@ -12817,7 +12817,7 @@
                 "row": "11",
                 "rowName": "10",
                 "seatId": "US191124",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12828,7 +12828,7 @@
                 "row": "10",
                 "rowName": "9",
                 "seatId": "US191026",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -12872,7 +12872,7 @@
                 "row": "13",
                 "rowName": "12",
                 "seatId": "US191323",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13136,7 +13136,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190343",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13213,7 +13213,7 @@
                 "row": "17",
                 "rowName": "16",
                 "seatId": "US191724",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13246,7 +13246,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190920",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13389,7 +13389,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190242",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13422,7 +13422,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190215",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13598,7 +13598,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190240",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13620,7 +13620,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190339",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13686,7 +13686,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190239",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -13928,7 +13928,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190629",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14005,7 +14005,7 @@
                 "row": "8",
                 "rowName": "7",
                 "seatId": "US190818",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "US",
@@ -14038,7 +14038,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190235",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14093,7 +14093,7 @@
                 "row": "10",
                 "rowName": "9",
                 "seatId": "US191021",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14104,7 +14104,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190925",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14137,7 +14137,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190419",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14346,7 +14346,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190216",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14434,7 +14434,7 @@
                 "row": "2",
                 "rowName": "2",
                 "seatId": "US190212",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14511,7 +14511,7 @@
                 "row": "6",
                 "rowName": "5",
                 "seatId": "US190617",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14588,7 +14588,7 @@
                 "row": "17",
                 "rowName": "16",
                 "seatId": "US191725",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14621,7 +14621,7 @@
                 "row": "10",
                 "rowName": "9",
                 "seatId": "US191024",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14753,7 +14753,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190918",
-                "status": "1"
+                "status": "0"
               },
               {
                 "area": "US",
@@ -14764,7 +14764,7 @@
                 "row": "4",
                 "rowName": "4",
                 "seatId": "US190420",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14786,7 +14786,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190315",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -14841,7 +14841,7 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190342",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -15006,7 +15006,7 @@
                 "row": "9",
                 "rowName": "8",
                 "seatId": "US190926",
-                "status": "0"
+                "status": "1"
               },
               {
                 "area": "US",
@@ -15083,22 +15083,22 @@
                 "row": "3",
                 "rowName": "3",
                 "seatId": "US190341",
-                "status": "0"
+                "status": "1"
               }
             ],
             "sectionId": "US",
             "sectionName": "楼上"
           }
         ],
-        "soldCount": "671"
+        "soldCount": "721"
       },
       "isNewSeat": "0",
       "messageList": [],
       "priceList": [
-        { "areaNo": "1", "oriPrice": "10000", "promotionPrice": "10000" },
-        { "areaNo": "2", "oriPrice": "10000", "promotionPrice": "10000" },
-        { "areaNo": "3", "oriPrice": "10000", "promotionPrice": "10000" },
-        { "areaNo": "4", "oriPrice": "10000", "promotionPrice": "10000" }
+        { "areaNo": "1", "oriPrice": "8000", "promotionPrice": "8000" },
+        { "areaNo": "2", "oriPrice": "8000", "promotionPrice": "8000" },
+        { "areaNo": "3", "oriPrice": "8000", "promotionPrice": "8000" },
+        { "areaNo": "4", "oriPrice": "8000", "promotionPrice": "8000" }
       ],
       "schedule": {
         "cinemaId": "4478",
@@ -15106,11 +15106,11 @@
         "hallId": "19",
         "hallName": "1号厅",
         "hasArea": "false",
-        "scheduleId": "533147453",
+        "scheduleId": "533147449",
         "scheduleType": "1",
-        "showId": "1281748",
-        "showName": "朋克武士",
-        "showTime": "1529653500",
+        "showId": "170493",
+        "showName": "捉鬼敢死队 (4K)",
+        "showTime": "1529404200",
         "showVersion": ""
       },
       "seatLimitInfo": {
@@ -15126,7 +15126,7 @@
         "allowedPayingOrderSize": "1",
         "currentPayingOrderSize": "0"
       },
-      "userPhone": "1340xxxxxxxx"
+      "userPhone": "13408522119"
     }
   },
   "ret": ["SUCCESS::调用成功"],
