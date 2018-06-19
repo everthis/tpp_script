@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tw": "jest --watch",
     "test": "jest"
   },
   "keywords": [],

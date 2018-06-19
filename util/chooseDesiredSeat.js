@@ -47,6 +47,49 @@ function bestInRow(arr, arrLen = arr.length) {
 function availableConsecutiveSeatsInRow(arr, num) {
   const result = []
   const arrLen = arr.length
+  let consecutiveAvaiableSeatNum = 0
+  let isPreviousSeatAvaiable = false
+
+  for (let i = 0; i < arrLen; i++) {
+    if (arr[i].status === '1') {
+      consecutiveAvaiableSeatNum += 1
+      isPreviousSeatAvaiable = true
+      if (i === arrLen - 1) {
+        result.push(
+          ...subConsecutiveArr(arr, [i, consecutiveAvaiableSeatNum], num)
+        )
+      }
+    } else {
+      if (isPreviousSeatAvaiable === true) {
+        result.push(
+          ...subConsecutiveArr(arr, [i, consecutiveAvaiableSeatNum], num)
+        )
+      }
+      consecutiveAvaiableSeatNum = 0
+      isPreviousSeatAvaiable = false
+    }
+  }
+  return result
+}
+/**
+ *
+ * @param {Array} arr
+ * @param {Array} idxPrev
+ * @param {Number} subArrLen
+ */
+function subConsecutiveArr(arr, idxPrev, subArrLen) {
+  const slicedArr = arr.slice(idxPrev[0] - idxPrev[1], idxPrev[0])
+  if (slicedArr.length < subArrLen) {
+    return []
+  }
+  const result = []
+  for (let i = 0; i <= slicedArr.length - subArrLen; i++) {
+    result.push(slicedArr.slice(i, subArrLen + i))
+  }
+  return result
+}
+function isSold(obj) {
+  return obj.status === '0' ? true : false
 }
 /**
  * arr is the element of sectionSeatMapList
@@ -80,4 +123,9 @@ function chooseBestSeat(apiData, config = {}) {
   result.general = bestInHall(hallSeat.sectionSeatMapList[0], num)
   return result
 }
-module.exports = { calcBestRows, chooseBestSeat, bestInRow }
+module.exports = {
+  calcBestRows,
+  chooseBestSeat,
+  bestInRow,
+  availableConsecutiveSeatsInRow
+}
