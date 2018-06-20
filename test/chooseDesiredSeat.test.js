@@ -72,68 +72,12 @@ test('the number of all available consecutive seats in a row must be right', () 
 
 test('all found consecutive seats in a row must be exact what expected', () => {
   expect(availableConsecutiveSeatsInRow(arr, 3)).toMatchObject([
-    [
-      {
-        seatId: 'DS191615',
-        status: '1'
-      },
-      {
-        seatId: 'DS191616',
-        status: '1'
-      },
-      {
-        seatId: 'DS191617',
-        status: '1'
-      }
-    ],
-    [
-      {
-        seatId: 'DS191620',
-        status: '1'
-      },
-      {
-        seatId: 'DS191621',
-        status: '1'
-      },
-      {
-        seatId: 'DS191622',
-        status: '1'
-      }
-    ],
-    [
-      {
-        seatId: 'DS191621',
-        status: '1'
-      },
-      {
-        seatId: 'DS191622',
-        status: '1'
-      },
-      {
-        seatId: 'DS191623',
-        status: '1'
-      }
-    ]
+    [arr[2], arr[3], arr[4]],
+    [arr[7], arr[8], arr[9]],
+    [arr[8], arr[9], arr[10]]
   ])
   expect(availableConsecutiveSeatsInRow(arr, 4)).toMatchObject([
-    [
-      {
-        seatId: 'DS191620',
-        status: '1'
-      },
-      {
-        seatId: 'DS191621',
-        status: '1'
-      },
-      {
-        seatId: 'DS191622',
-        status: '1'
-      },
-      {
-        seatId: 'DS191623',
-        status: '1'
-      }
-    ]
+    [arr[7], arr[8], arr[9], arr[10]]
   ])
   expect(availableConsecutiveSeatsInRow(arr, 5)).toMatchObject([])
 })

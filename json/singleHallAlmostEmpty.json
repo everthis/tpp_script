@@ -1,0 +1,1768 @@
+{
+  "api": "mtop.film.mtopseatapi.getscheduleseat",
+  "data": {
+    "returnCode": "0",
+    "returnValue": {
+      "cityCode": "310100",
+      "cityName": "上海",
+      "hallSeatMap": {
+        "seatCount": "167",
+        "sectionSeatMapList": [
+          {
+            "maxColumn": "15",
+            "maxRow": "14",
+            "minColumn": "2",
+            "minRow": "2",
+            "recommendSeatMap": {
+              "1": {
+                "recommendSeatIds": ["2672"],
+                "recommendSeatNames": ["G排8座-89"],
+                "status": "1",
+                "tip": "非常棒，最佳观影区的位置~"
+              },
+              "2": {
+                "recommendSeatIds": ["2671", "2672"],
+                "recommendSeatNames": ["G排7座-88", "G排8座-89"],
+                "status": "1",
+                "tip": "非常棒，最佳观影区的位置~"
+              },
+              "3": {
+                "recommendSeatIds": ["2671", "2672", "2673"],
+                "recommendSeatNames": ["G排7座-88", "G排8座-89", "G排9座-810"],
+                "status": "1",
+                "tip": "非常棒，最佳观影区的位置~"
+              },
+              "4": {
+                "recommendSeatIds": ["2670", "2671", "2672", "2673"],
+                "recommendSeatNames": [
+                  "G排6座-87",
+                  "G排7座-88",
+                  "G排8座-89",
+                  "G排9座-810"
+                ],
+                "status": "1",
+                "tip": "非常棒，最佳观影区的位置~"
+              }
+            },
+            "seats": [
+              {
+                "column": "3",
+                "extId": "2576",
+                "flag": "0",
+                "name": "A排1座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2576",
+                "status": "0"
+              },
+              {
+                "column": "4",
+                "extId": "2577",
+                "flag": "0",
+                "name": "A排2座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2577",
+                "status": "0"
+              },
+              {
+                "column": "6",
+                "extId": "2579",
+                "flag": "0",
+                "name": "A排3座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2579",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2580",
+                "flag": "0",
+                "name": "A排4座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2580",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2581",
+                "flag": "0",
+                "name": "A排5座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2581",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2582",
+                "flag": "0",
+                "name": "A排6座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2582",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2583",
+                "flag": "0",
+                "name": "A排7座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2583",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2584",
+                "flag": "0",
+                "name": "A排8座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2584",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2585",
+                "flag": "0",
+                "name": "A排9座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2585",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2586",
+                "flag": "0",
+                "name": "A排10座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2586",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2587",
+                "flag": "0",
+                "name": "A排11座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2587",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2588",
+                "flag": "0",
+                "name": "A排12座",
+                "row": "2",
+                "rowName": "A",
+                "seatId": "2588",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2590",
+                "flag": "0",
+                "name": "B排1座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2590",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2591",
+                "flag": "0",
+                "name": "B排2座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2591",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2592",
+                "flag": "0",
+                "name": "B排3座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2592",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2593",
+                "flag": "0",
+                "name": "B排4座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2593",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2594",
+                "flag": "0",
+                "name": "B排5座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2594",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2595",
+                "flag": "0",
+                "name": "B排6座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2595",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2596",
+                "flag": "0",
+                "name": "B排7座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2596",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2597",
+                "flag": "0",
+                "name": "B排8座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2597",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2598",
+                "flag": "0",
+                "name": "B排9座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2598",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2599",
+                "flag": "0",
+                "name": "B排10座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2599",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2600",
+                "flag": "0",
+                "name": "B排11座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2600",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2601",
+                "flag": "0",
+                "name": "B排12座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2601",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2602",
+                "flag": "0",
+                "name": "B排13座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2602",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2603",
+                "flag": "0",
+                "name": "B排14座",
+                "row": "3",
+                "rowName": "B",
+                "seatId": "2603",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2605",
+                "flag": "0",
+                "name": "C排1座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2605",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2606",
+                "flag": "0",
+                "name": "C排2座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2606",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2607",
+                "flag": "0",
+                "name": "C排3座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2607",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2608",
+                "flag": "0",
+                "name": "C排4座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2608",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2609",
+                "flag": "0",
+                "name": "C排5座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2609",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2610",
+                "flag": "0",
+                "name": "C排6座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2610",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2611",
+                "flag": "0",
+                "name": "C排7座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2611",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2612",
+                "flag": "0",
+                "name": "C排8座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2612",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2613",
+                "flag": "0",
+                "name": "C排9座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2613",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2614",
+                "flag": "0",
+                "name": "C排10座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2614",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2615",
+                "flag": "0",
+                "name": "C排11座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2615",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2616",
+                "flag": "0",
+                "name": "C排12座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2616",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2617",
+                "flag": "0",
+                "name": "C排13座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2617",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2618",
+                "flag": "0",
+                "name": "C排14座",
+                "row": "4",
+                "rowName": "C",
+                "seatId": "2618",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2620",
+                "flag": "0",
+                "name": "D排1座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2620",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2621",
+                "flag": "0",
+                "name": "D排2座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2621",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2622",
+                "flag": "0",
+                "name": "D排3座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2622",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2623",
+                "flag": "0",
+                "name": "D排4座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2623",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2624",
+                "flag": "0",
+                "name": "D排5座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2624",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2625",
+                "flag": "0",
+                "name": "D排6座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2625",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2626",
+                "flag": "0",
+                "name": "D排7座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2626",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2627",
+                "flag": "0",
+                "name": "D排8座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2627",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2628",
+                "flag": "0",
+                "name": "D排9座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2628",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2629",
+                "flag": "0",
+                "name": "D排10座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2629",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2630",
+                "flag": "0",
+                "name": "D排11座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2630",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2631",
+                "flag": "0",
+                "name": "D排12座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2631",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2632",
+                "flag": "0",
+                "name": "D排13座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2632",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2633",
+                "flag": "0",
+                "name": "D排14座",
+                "row": "5",
+                "rowName": "D",
+                "seatId": "2633",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2635",
+                "flag": "0",
+                "name": "E排1座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2635",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2636",
+                "flag": "0",
+                "name": "E排2座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2636",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2637",
+                "flag": "0",
+                "name": "E排3座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2637",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2638",
+                "flag": "0",
+                "name": "E排4座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2638",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2639",
+                "flag": "0",
+                "name": "E排5座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2639",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2640",
+                "flag": "0",
+                "name": "E排6座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2640",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2641",
+                "flag": "0",
+                "name": "E排7座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2641",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2642",
+                "flag": "0",
+                "name": "E排8座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2642",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2643",
+                "flag": "0",
+                "name": "E排9座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2643",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2644",
+                "flag": "0",
+                "name": "E排10座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2644",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2645",
+                "flag": "0",
+                "name": "E排11座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2645",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2646",
+                "flag": "0",
+                "name": "E排12座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2646",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2647",
+                "flag": "0",
+                "name": "E排13座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2647",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2648",
+                "flag": "0",
+                "name": "E排14座",
+                "row": "6",
+                "rowName": "E",
+                "seatId": "2648",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2650",
+                "flag": "0",
+                "name": "F排1座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2650",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2651",
+                "flag": "0",
+                "name": "F排2座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2651",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2652",
+                "flag": "0",
+                "name": "F排3座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2652",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2653",
+                "flag": "0",
+                "name": "F排4座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2653",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2654",
+                "flag": "0",
+                "name": "F排5座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2654",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2655",
+                "flag": "0",
+                "name": "F排6座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2655",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2656",
+                "flag": "0",
+                "name": "F排7座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2656",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2657",
+                "flag": "0",
+                "name": "F排8座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2657",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2658",
+                "flag": "0",
+                "name": "F排9座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2658",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2659",
+                "flag": "0",
+                "name": "F排10座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2659",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2660",
+                "flag": "0",
+                "name": "F排11座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2660",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2661",
+                "flag": "0",
+                "name": "F排12座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2661",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2662",
+                "flag": "0",
+                "name": "F排13座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2662",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2663",
+                "flag": "0",
+                "name": "F排14座",
+                "row": "7",
+                "rowName": "F",
+                "seatId": "2663",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2665",
+                "flag": "0",
+                "name": "G排1座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2665",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2666",
+                "flag": "0",
+                "name": "G排2座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2666",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2667",
+                "flag": "0",
+                "name": "G排3座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2667",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2668",
+                "flag": "0",
+                "name": "G排4座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2668",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2669",
+                "flag": "0",
+                "name": "G排5座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2669",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2670",
+                "flag": "0",
+                "name": "G排6座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2670",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2671",
+                "flag": "0",
+                "name": "G排7座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2671",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2672",
+                "flag": "0",
+                "name": "G排8座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2672",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2673",
+                "flag": "0",
+                "name": "G排9座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2673",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2674",
+                "flag": "0",
+                "name": "G排10座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2674",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2675",
+                "flag": "0",
+                "name": "G排11座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2675",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2676",
+                "flag": "0",
+                "name": "G排12座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2676",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2677",
+                "flag": "0",
+                "name": "G排13座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2677",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2678",
+                "flag": "0",
+                "name": "G排14座",
+                "row": "8",
+                "rowName": "G",
+                "seatId": "2678",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2680",
+                "flag": "0",
+                "name": "H排1座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2680",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2681",
+                "flag": "0",
+                "name": "H排2座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2681",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2682",
+                "flag": "0",
+                "name": "H排3座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2682",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2683",
+                "flag": "0",
+                "name": "H排4座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2683",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2684",
+                "flag": "0",
+                "name": "H排5座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2684",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2685",
+                "flag": "0",
+                "name": "H排6座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2685",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2686",
+                "flag": "0",
+                "name": "H排7座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2686",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2687",
+                "flag": "0",
+                "name": "H排8座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2687",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2688",
+                "flag": "0",
+                "name": "H排9座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2688",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2689",
+                "flag": "0",
+                "name": "H排10座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2689",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2690",
+                "flag": "0",
+                "name": "H排11座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2690",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2691",
+                "flag": "0",
+                "name": "H排12座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2691",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2692",
+                "flag": "0",
+                "name": "H排13座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2692",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2693",
+                "flag": "0",
+                "name": "H排14座",
+                "row": "9",
+                "rowName": "H",
+                "seatId": "2693",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2695",
+                "flag": "0",
+                "name": "I排1座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2695",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2696",
+                "flag": "0",
+                "name": "I排2座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2696",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2697",
+                "flag": "0",
+                "name": "I排3座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2697",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2698",
+                "flag": "0",
+                "name": "I排4座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2698",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2699",
+                "flag": "0",
+                "name": "I排5座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2699",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2700",
+                "flag": "0",
+                "name": "I排6座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2700",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2701",
+                "flag": "0",
+                "name": "I排7座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2701",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2702",
+                "flag": "0",
+                "name": "I排8座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2702",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2703",
+                "flag": "0",
+                "name": "I排9座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2703",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2704",
+                "flag": "0",
+                "name": "I排10座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2704",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2705",
+                "flag": "0",
+                "name": "I排11座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2705",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2706",
+                "flag": "0",
+                "name": "I排12座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2706",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2707",
+                "flag": "0",
+                "name": "I排13座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2707",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2708",
+                "flag": "0",
+                "name": "I排14座",
+                "row": "10",
+                "rowName": "I",
+                "seatId": "2708",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2710",
+                "flag": "0",
+                "name": "J排1座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2710",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2711",
+                "flag": "0",
+                "name": "J排2座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2711",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2712",
+                "flag": "0",
+                "name": "J排3座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2712",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2713",
+                "flag": "0",
+                "name": "J排4座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2713",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2714",
+                "flag": "0",
+                "name": "J排5座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2714",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2715",
+                "flag": "0",
+                "name": "J排6座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2715",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2716",
+                "flag": "0",
+                "name": "J排7座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2716",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2717",
+                "flag": "0",
+                "name": "J排8座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2717",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2718",
+                "flag": "0",
+                "name": "J排9座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2718",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2719",
+                "flag": "0",
+                "name": "J排10座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2719",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2720",
+                "flag": "0",
+                "name": "J排11座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2720",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2721",
+                "flag": "0",
+                "name": "J排12座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2721",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2722",
+                "flag": "0",
+                "name": "J排13座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2722",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2723",
+                "flag": "0",
+                "name": "J排14座",
+                "row": "11",
+                "rowName": "J",
+                "seatId": "2723",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2725",
+                "flag": "0",
+                "name": "K排1座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2725",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2726",
+                "flag": "0",
+                "name": "K排2座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2726",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2727",
+                "flag": "0",
+                "name": "K排3座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2727",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2728",
+                "flag": "0",
+                "name": "K排4座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2728",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2729",
+                "flag": "0",
+                "name": "K排5座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2729",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2730",
+                "flag": "0",
+                "name": "K排6座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2730",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2731",
+                "flag": "0",
+                "name": "K排7座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2731",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2732",
+                "flag": "0",
+                "name": "K排8座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2732",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2733",
+                "flag": "0",
+                "name": "K排9座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2733",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2734",
+                "flag": "0",
+                "name": "K排10座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2734",
+                "status": "1"
+              },
+              {
+                "column": "12",
+                "extId": "2735",
+                "flag": "0",
+                "name": "K排11座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2735",
+                "status": "1"
+              },
+              {
+                "column": "13",
+                "extId": "2736",
+                "flag": "0",
+                "name": "K排12座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2736",
+                "status": "1"
+              },
+              {
+                "column": "14",
+                "extId": "2737",
+                "flag": "0",
+                "name": "K排13座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2737",
+                "status": "1"
+              },
+              {
+                "column": "15",
+                "extId": "2738",
+                "flag": "0",
+                "name": "K排14座",
+                "row": "12",
+                "rowName": "K",
+                "seatId": "2738",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2740",
+                "flag": "0",
+                "name": "L排1座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2740",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2741",
+                "flag": "0",
+                "name": "L排2座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2741",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2742",
+                "flag": "0",
+                "name": "L排3座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2742",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2743",
+                "flag": "0",
+                "name": "L排4座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2743",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2744",
+                "flag": "0",
+                "name": "L排5座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2744",
+                "status": "1"
+              },
+              {
+                "column": "7",
+                "extId": "2745",
+                "flag": "0",
+                "name": "L排6座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2745",
+                "status": "1"
+              },
+              {
+                "column": "8",
+                "extId": "2746",
+                "flag": "0",
+                "name": "L排7座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2746",
+                "status": "1"
+              },
+              {
+                "column": "9",
+                "extId": "2747",
+                "flag": "0",
+                "name": "L排8座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2747",
+                "status": "1"
+              },
+              {
+                "column": "10",
+                "extId": "2748",
+                "flag": "0",
+                "name": "L排9座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2748",
+                "status": "1"
+              },
+              {
+                "column": "11",
+                "extId": "2749",
+                "flag": "0",
+                "name": "L排10座",
+                "row": "13",
+                "rowName": "L",
+                "seatId": "2749",
+                "status": "1"
+              },
+              {
+                "column": "2",
+                "extId": "2755",
+                "flag": "0",
+                "name": "M排1座",
+                "row": "14",
+                "rowName": "M",
+                "seatId": "2755",
+                "status": "1"
+              },
+              {
+                "column": "3",
+                "extId": "2756",
+                "flag": "0",
+                "name": "M排2座",
+                "row": "14",
+                "rowName": "M",
+                "seatId": "2756",
+                "status": "1"
+              },
+              {
+                "column": "4",
+                "extId": "2757",
+                "flag": "0",
+                "name": "M排3座",
+                "row": "14",
+                "rowName": "M",
+                "seatId": "2757",
+                "status": "1"
+              },
+              {
+                "column": "5",
+                "extId": "2758",
+                "flag": "0",
+                "name": "M排4座",
+                "row": "14",
+                "rowName": "M",
+                "seatId": "2758",
+                "status": "1"
+              },
+              {
+                "column": "6",
+                "extId": "2759",
+                "flag": "0",
+                "name": "M排5座",
+                "row": "14",
+                "rowName": "M",
+                "seatId": "2759",
+                "status": "1"
+              }
+            ]
+          }
+        ],
+        "soldCount": "2"
+      },
+      "isNewSeat": "0",
+      "messageList": [
+        {
+          "confirmText": "我知道了",
+          "message": "您选择的是<b>后天 06-22</b>的场次，请看仔细哦",
+          "messageCode": "alert"
+        }
+      ],
+      "priceList": [
+        { "areaNo": "1", "oriPrice": "6880", "promotionPrice": "6880" },
+        { "areaNo": "2", "oriPrice": "6880", "promotionPrice": "6880" },
+        { "areaNo": "3", "oriPrice": "6880", "promotionPrice": "6880" },
+        { "areaNo": "4", "oriPrice": "6880", "promotionPrice": "6880" }
+      ],
+      "schedule": {
+        "cinemaId": "12916",
+        "cinemaName": "上海百丽宫影城（环贸iapm店）",
+        "hallId": "1544",
+        "hallName": "4号厅",
+        "hasArea": "false",
+        "scheduleId": "537650441",
+        "scheduleType": "1",
+        "showId": "180356",
+        "showName": "超人总动员2",
+        "showTime": "1529641500",
+        "showVersion": "英语 3D"
+      },
+      "seatLimitInfo": {
+        "maxSeatCount": "4",
+        "maxSeatMsg": "最多可选4个座位",
+        "minSeatCount": "0"
+      },
+      "seatsLockedInfo": {
+        "allowedLockingSeatSize": "10",
+        "currentLockingSeatSize": "0"
+      },
+      "unPayOrderinfo": {
+        "allowedPayingOrderSize": "1",
+        "currentPayingOrderSize": "0"
+      },
+      "userPhone": "13408522119"
+    }
+  },
+  "ret": ["SUCCESS::调用成功"],
+  "v": "7.5"
+}

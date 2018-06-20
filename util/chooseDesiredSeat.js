@@ -39,6 +39,9 @@ function calcBestRows(arr, arrLen = arr.length) {
  * @param {Array} arr
  * @return {Array}
  */
+function resultOfRow(arr, num) {
+  return availableConsecutiveSeatsInRow(bestInRow(arr), num)
+}
 function bestInRow(arr, arrLen = arr.length) {
   const radius = Math.floor(arrLen / 5)
   const pivot = Math.floor(arrLen / 2)
@@ -98,12 +101,9 @@ function isSold(obj) {
 function bestInHall(obj, num) {
   const { seats } = obj
   const seatsMap = {}
-  const bestRows = []
   seats.forEach(
     (el, idx) =>
-      seatsMap[el.rowName]
-        ? seatsMap[el.rowName].push(el)
-        : (seatsMap[el.rowName] = [el])
+      seatsMap[el.row] ? seatsMap[el.row].push(el) : (seatsMap[el.row] = [el])
   )
   // front to rear
   const rows = Object.keys(seatsMap).sort((a, b) => +a - +b)
@@ -111,7 +111,11 @@ function bestInHall(obj, num) {
     // left to right
     seatsMap[el] = seatsMap[el].sort((a, b) => +a.column - +b.column)
   })
-  return seatsMap['15']
+  const result = []
+  calcBestRows(rows.map(el => seatsMap[el])).forEach(row =>
+    result.push(...resultOfRow(row, num))
+  )
+  return result
 }
 
 function chooseBestSeat(apiData, config = {}) {
@@ -120,7 +124,12 @@ function chooseBestSeat(apiData, config = {}) {
   const hallSeat = apiData.data.returnValue.hallSeatMap
   // pick api recommendSeatMap first
   result.recommend = pickApiRecommend(hallSeat.sectionSeatMapList)
-  result.general = bestInHall(hallSeat.sectionSeatMapList[0], num)
+  // choose best in general
+  const generalDesiredSeats = []
+  hallSeat.sectionSeatMapList.forEach(hall => {
+    generalDesiredSeats.push(...bestInHall(hall, num))
+  })
+  result.general = generalDesiredSeats
   return result
 }
 module.exports = {
