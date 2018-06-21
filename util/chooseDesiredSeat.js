@@ -43,6 +43,7 @@ function resultOfRow(arr, num) {
   return availableConsecutiveSeatsInRow(bestInRow(arr), num)
 }
 function bestInRow(arr, arrLen = arr.length) {
+  if (arrLen <= 10) return arr
   const radius = Math.floor(arrLen / 5)
   const pivot = Math.floor(arrLen / 2)
   return arr.filter((el, idx) => idx >= pivot - radius && idx <= pivot + radius)
@@ -65,7 +66,7 @@ function availableConsecutiveSeatsInRow(arr, num) {
     } else {
       if (isPreviousSeatAvaiable === true) {
         result.push(
-          ...subConsecutiveArr(arr, [i, consecutiveAvaiableSeatNum], num)
+          ...subConsecutiveArr(arr, [i - 1, consecutiveAvaiableSeatNum], num)
         )
       }
       consecutiveAvaiableSeatNum = 0
@@ -81,7 +82,7 @@ function availableConsecutiveSeatsInRow(arr, num) {
  * @param {Number} subArrLen
  */
 function subConsecutiveArr(arr, idxPrev, subArrLen) {
-  const slicedArr = arr.slice(idxPrev[0] - idxPrev[1], idxPrev[0])
+  const slicedArr = arr.slice(idxPrev[0] - idxPrev[1] + 1, idxPrev[0] + 1)
   if (slicedArr.length < subArrLen) {
     return []
   }
