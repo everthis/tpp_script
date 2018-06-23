@@ -15,6 +15,8 @@ const LOCK_SEAT_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopseatapi.asylockseat/5.0/'
 const USER_SIMPLE_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.user.getusersimple/1.0/'
+const CHECK_IN_PROGRESS_ORDER_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopseatapi.getorderingseatscheck/5.0/'
 const PAY_CHECK_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopmarketingapi.cacpaymentsolution/7.2/'
 const ORDER_URL =
@@ -37,5 +39,6 @@ module.exports = {
   TPP_USER_SIMPLE_URL,
   TPP_SCHEDULE_SEAT_URL,
   SET_MISSING_TOKEN_URL,
-  TB_USER_SIMPLE_INFO_URL
+  TB_USER_SIMPLE_INFO_URL,
+  CHECK_IN_PROGRESS_ORDER_URL
 }

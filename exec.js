@@ -7,3 +7,6 @@
  * onlyBestZone: boolean
  * notifyResult: boolean
  */
+/**
+ * login ---> chooseSeats ---> lockSeats ---> payCheck ---> placeOrder
+ */
