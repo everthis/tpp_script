@@ -2,13 +2,13 @@ const calcSign = require('./tb/calcSign')
 const tbFetch = require('./util/tbFetch')
 const { APP_KEY, LOCK_SEAT_URL } = require('./util/constant')
 const tsFunc = require('./util/index').ts
-function genQsObj(cookieStr, obj) {
+function genQsObj(cookieStr, { scheduleId, mobile, seatIDs, seatNames }) {
   const ts = tsFunc()
   const dataObj = {
-    scheduleId: '536194133',
-    mobile: '1340xxxxxxxx',
-    seatIDs: '0000000000000001-5-08|0000000000000001-5-09',
-    seatNames: '5排08座|5排09座',
+    scheduleId,
+    mobile,
+    seatIDs,
+    seatNames,
     platform: '8',
     activityIds: 0
   }
@@ -34,8 +34,8 @@ function genQsObj(cookieStr, obj) {
  * @param {string} cookieStr
  * @param {string} scheduleId
  */
-function lockSeat(cookieStr, scheduleId) {
-  const qsObj = genQsObj(cookieStr, scheduleId)
+function lockSeat(cookieStr, payload) {
+  const qsObj = genQsObj(cookieStr, payload)
   return tbFetch({
     cookie: cookieStr,
     url: LOCK_SEAT_URL,

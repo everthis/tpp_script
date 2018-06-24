@@ -2,14 +2,14 @@ const calcSign = require('./tb/calcSign')
 const tbFetch = require('./util/tbFetch')
 const { APP_KEY, PAY_CHECK_URL } = require('./util/constant')
 const tsFunc = require('./util/index').ts
-function genQsObj(cookieStr, obj) {
+function genQsObj(cookieStr, { scheduleId, lockSeatApplyKey, seatIDs }) {
   const ts = tsFunc()
   const dataObj = {
     useCouponFlag: 0,
     preSaleProcedure: 0,
-    lockSeatApplyKey: `${userNumId}_${scheduleId}_[DS91427, DS91426]`,
-    scheduleId: '535501069',
-    seatIDs: 'DS91427|DS91426',
+    lockSeatApplyKey,
+    scheduleId,
+    seatIDs,
     useActivityFlag: 1,
     preSaleCodes: '',
     useMCardFlag: 1,
@@ -36,14 +36,14 @@ function genQsObj(cookieStr, obj) {
 /**
  *
  * @param {string} cookieStr
- * @param {string} scheduleId
+ * @param {object} payload
  */
-function lockSeat(cookieStr, scheduleId) {
-  const qsObj = genQsObj(cookieStr, scheduleId)
+function payCheck(cookieStr, payload) {
+  const qsObj = genQsObj(cookieStr, payload)
   return tbFetch({
     cookie: cookieStr,
     url: PAY_CHECK_URL,
     qsObj
   })
 }
-module.exports = lockSeat
+module.exports = payCheck

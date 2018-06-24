@@ -27,7 +27,7 @@ async function headlessLogin() {
   )
   await page.waitForNavigation()
   await page.goto(MY_TB_PAGE_URL, {
-    waitUntil: 'networkidle2'
+    waitUntil: 'networkidle0'
   })
   const cookies = await page.cookies()
 
