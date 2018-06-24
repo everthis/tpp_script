@@ -9,7 +9,7 @@ const payCheck = require('./payCheck')
 const placeOrder = require('./placeOrder')
 
 const ctx = {}
-const scheduleId = '538216867'
+const scheduleId = '538216828'
 const config = {
   ticketNum: 3
 }

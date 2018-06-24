@@ -10,12 +10,19 @@ function prePlaceOrder(tppUserSimpleApiData, payCheckApiData) {
     seatIDsArr.push(el.seatId)
     seatNamesArr.push(el.name)
   })
-
+  const activityIds =
+    payCheckApiDataReturnValue.ordering &&
+    payCheckApiDataReturnValue.ordering.activityIds
+  const useActivityFlag =
+    payCheckApiDataReturnValue.ordering &&
+    payCheckApiDataReturnValue.ordering.useActivityFlag
   return {
     scheduleId,
     lockSeatApplyKey: `${userNumId}_${scheduleId}_[${seatIDsArr.join(', ')}]`,
     seatIDs: seatIDsArr.join('|'),
     seatNames: seatNamesArr.join('|'),
+    activityIds,
+    useActivityFlag,
     totalPrice,
     mobile
   }

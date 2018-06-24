@@ -13,6 +13,7 @@ type: jsonp
 dataType: jsonp
 callback: mtopjsonp3
 data: {"scheduleId":"537894352","lockSeatApplyKey":"388001568_537894352_[0000000000000001-2-06, 0000000000000001-2-05, 0000000000000001-2-04]","seatIDs":"0000000000000001-2-06|0000000000000001-2-05|0000000000000001-2-04","seatNames":"2排06座|2排05座|2排04座","totalPrice":"16200","useActivityFlag":"1","useMcardFlag":"1","orderExtInfo":"sqm=a1z2r.7661912.1.1","mobile":"13408522119","platform":"8"}
+{"scheduleId":"538216834","lockSeatApplyKey":"388001568_538216834_[0000000000000001-4-07, 0000000000000001-4-06, 0000000000000001-4-05]","seatIDs":"0000000000000001-4-07|0000000000000001-4-06|0000000000000001-4-05","seatNames":"4排07座|4排06座|4排05座","activityIds":"64522","totalPrice":"12980","useActivityFlag":"4","useMcardFlag":"1","orderExtInfo":"sqm=a1z2r.7661912.1.1","mobile":"13408522119","platform":"8"}
  */
 
 const calcSign = require('./tb/calcSign')
@@ -21,7 +22,16 @@ const { APP_KEY, PLACE_ORDER_URL } = require('./util/constant')
 const tsFunc = require('./util/index').ts
 function genQsObj(
   cookieStr,
-  { scheduleId, lockSeatApplyKey, seatIDs, seatNames, totalPrice, mobile }
+  {
+    scheduleId,
+    lockSeatApplyKey,
+    seatIDs,
+    seatNames,
+    totalPrice,
+    activityIds,
+    useActivityFlag,
+    mobile
+  }
 ) {
   const ts = tsFunc()
   const dataObj = {
@@ -30,11 +40,14 @@ function genQsObj(
     seatIDs,
     seatNames,
     totalPrice,
-    useActivityFlag: '1',
+    useActivityFlag: useActivityFlag || '1',
     useMcardFlag: '1',
     orderExtInfo: 'sqm=a1z2r.7661912.1.1',
     mobile,
     platform: '8'
+  }
+  if (activityIds) {
+    dataObj.activityIds = activityIds
   }
   const dataStr = JSON.stringify(dataObj)
   return {
