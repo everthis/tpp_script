@@ -21,10 +21,11 @@ function pickApiRecommend(arr) {
  * @param {Array} arr
  */
 function calcBestRows(arr, arrLen = arr.length) {
-  if (arrLen <= 8) return arr
-  const numberOfOmittedRowsFromLast = 3
-  const numberOfRowsInFrontOfPivot = 4
+  const isSmallHall = arrLen - 6 <= 4 ? true : false
+  if (arrLen <= 6) return arr
   const pivot = Math.floor(arrLen / 2)
+  const numberOfOmittedRowsFromLast = Math.floor(pivot / 2)
+  const numberOfRowsInFrontOfPivot = isSmallHall ? 1 : 3
   const result = []
   for (let i = 0; i < arrLen; i++) {
     i >= pivot - numberOfRowsInFrontOfPivot &&
@@ -34,6 +35,10 @@ function calcBestRows(arr, arrLen = arr.length) {
   }
   return result
 }
+function isOdd(num) {
+  return num % 2 === 1
+}
+
 /**
  * figure out the best seats of a row
  * @param {Array} arr
@@ -43,10 +48,15 @@ function resultOfRow(arr, num) {
   return availableConsecutiveSeatsInRow(bestInRow(arr), num)
 }
 function bestInRow(arr, arrLen = arr.length) {
+  const isNumOfSeatsOdd = isOdd(arrLen)
   if (arrLen <= 10) return arr
   const radius = Math.floor(arrLen / 5)
   const pivot = Math.floor(arrLen / 2)
-  return arr.filter((el, idx) => idx >= pivot - radius && idx <= pivot + radius)
+  return arr.filter(
+    (el, idx) =>
+      idx >= (isNumOfSeatsOdd ? pivot - radius : pivot - radius - 1) &&
+      idx <= pivot + radius
+  )
 }
 function availableConsecutiveSeatsInRow(arr, num) {
   const result = []
@@ -100,18 +110,23 @@ function isSold(obj) {
  * @param {Object} obj
  */
 function bestInHall(obj, num) {
-  const { seats } = obj
+  const { seats, maxColumn, minColumn } = obj
   const seatsMap = {}
   seats.forEach(
-    (el, idx) =>
-      seatsMap[el.row] ? seatsMap[el.row].push(el) : (seatsMap[el.row] = [el])
+    (el, idx) => {
+      if (!seatsMap[el.row]) {
+        seatsMap[el.row] = Array.from({ length: +maxColumn })
+      }
+      seatsMap[el.row][+el.column - minColumn] = el
+    }
+    // seatsMap[el.row] ? seatsMap[el.row].push(el) : (seatsMap[el.row] = [el])
   )
   // front to rear
   const rows = Object.keys(seatsMap).sort((a, b) => +a - +b)
-  rows.forEach((el, idx) => {
-    // left to right
-    seatsMap[el] = seatsMap[el].sort((a, b) => +a.column - +b.column)
-  })
+  // rows.forEach((el, idx) => {
+  //   // left to right
+  //   seatsMap[el] = seatsMap[el].sort((a, b) => +a.column - +b.column)
+  // })
   const result = []
   calcBestRows(rows.map(el => seatsMap[el])).forEach(row =>
     result.push(...resultOfRow(row, num))

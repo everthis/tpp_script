@@ -1,5 +1,5 @@
 const renderSeat = require('./renderSeat/index')
-const apiData = require('../json/singleHallAlmostEmpty.json')
+const apiData = require('../json/singleHallCenterHalfOccupied.json')
 import css from './tpp.css'
 const mapConfig = {
   floorDistance: 48,
@@ -31,7 +31,20 @@ function initSeat(data) {
     viewWidth: document.body.clientWidth,
     viewHeight: window.innerHeight,
     mapConfig: mapConfig,
-    selectedSeatIds: [],
+    selectedSeatIds: [
+      '0000000000000001-3-10',
+      '0000000000000001-3-09',
+      '0000000000000001-3-08',
+      '0000000000000001-3-07',
+      '0000000000000001-3-06',
+      '0000000000000001-3-05',
+      '0000000000000001-6-10',
+      '0000000000000001-6-09',
+      '0000000000000001-6-08',
+      '0000000000000001-6-07',
+      '0000000000000001-6-06',
+      '0000000000000001-6-05'
+    ],
     beforeSelectSeats: anoymous,
     afterSelectSeats: anoymous
   })
