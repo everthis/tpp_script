@@ -25,13 +25,15 @@ const TPP_USER_SIMPLE_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.user.getusersimple/1.0/'
 const SET_MISSING_TOKEN_URL =
   'http://h5api.m.taobao.com/h5/mtop.taobao.baichuan.smb.get/1.0/'
-
+const ALL_REGION_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopregionapi.getallregion/4.0/'
 module.exports = {
   APP_KEY,
   USER_AGENT,
   TB_LOGIN_URL,
   LOCK_SEAT_URL,
   PAY_CHECK_URL,
+  ALL_REGION_URL,
   MY_TB_PAGE_URL,
   USER_SIMPLE_URL,
   PLACE_ORDER_URL,
