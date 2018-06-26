@@ -4,6 +4,7 @@ blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,
     padding: 0;
     font-family: Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,STXihei,SimHei,WenQuanYi Micro Hei,Droid Sans,sans-serif;
 }
+@import "scss-partial/swipe";
 .seat-legend {
     display: flex;
     align-items: center;

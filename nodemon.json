@@ -1,0 +1,4 @@
+{
+  "watch": ["dev-server"],
+  "ext": "js"
+}

@@ -19,23 +19,33 @@ function initSeat(data, selectedSeatIds) {
     afterSelectSeats: anoymous
   })
 }
+
 const app = new Vue({
   el: '#app',
   data: {
     showContent: false,
+    cityCodes: null,
+    alphabetZone: [],
     message: ''
   },
   methods: {
     querySchedule() {
       return fetch('/tpp/schedules').then(r => r.json())
     },
-    test() {
-      return fetch('/tpp/test').then(r => r.json())
-    }
+    getAllRegion() {
+      return fetch('/tpp/allRegion')
+        .then(r => r.json())
+        .then(d => (this.cityCodes = d.data.returnValue))
+    },
+    alphabetChange(val) {
+      this.alphabetZone = val
+      console.log(val)
+    },
+    formatRegion() {}
   },
   created: function() {},
   mounted() {
     this.showContent = true
-    this.querySchedule().then(this.test)
+    this.querySchedule().then(this.getAllRegion)
   }
 })
