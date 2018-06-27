@@ -1,7 +1,20 @@
-import Vue from 'vue'
-const renderSeat = require('../tb/renderSeat/index')
-import scss from './index.scss'
-import mapConfig from './seatMapConfig'
+<template>
+  <div>
+    <div class="content" v-if="showContent"></div>
+    <div class="alphabet-wrap">
+        <span class="alphabet" v-for="(el, prop) in cityCodes" :key="prop"
+        @click="alphabetChange(el)">{{prop}}</span>
+    </div>
+    <div class="city-wrap">
+      <span class="city"
+      v-for="(el, idx) in alphabetZone"
+      :key="idx">{{alphabetZone.length}}</span>
+    </div>
+  </div>
+</template>
+<script>
+const renderSeat = require('../../tb/renderSeat/index')
+import mapConfig from '../javascript/script/seatMapConfig'
 function anoymous() {}
 function initSeat(data, selectedSeatIds) {
   new renderSeat({
@@ -19,15 +32,17 @@ function initSeat(data, selectedSeatIds) {
     afterSelectSeats: anoymous
   })
 }
-
-const app = new Vue({
-  el: '#app',
-  data: {
-    showContent: false,
-    cityCodes: null,
-    alphabetZone: [],
-    message: ''
+export default {
+  data() {
+    return {
+        showContent: false,
+        cityCodes: null,
+        alphabetZone: [],
+        message: ''
+    }
   },
+  mounted() {},
+  beforeDestroy() {},
   methods: {
     querySchedule() {
       return fetch('/tpp/schedules').then(r => r.json())
@@ -43,9 +58,11 @@ const app = new Vue({
     },
     formatRegion() {}
   },
-  created: function() {},
   mounted() {
     this.showContent = true
     this.querySchedule().then(this.getAllRegion)
   }
-})
+}
+</script>
+<style lang="scss" scoped>
+</style>

@@ -1,0 +1,15 @@
+.mask {
+    @extend %full-viewport;
+    background-color: $black;
+    opacity: $mask-opacity;
+    transition: opacity 0.2s 80ms;
+    .trans-leave &,
+    .trans-enter-to & {
+      opacity: $mask-opacity;
+    }
+    .trans-enter &,
+    .trans-leave-to & {
+      opacity: 0;
+    }
+  }
+  

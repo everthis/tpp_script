@@ -1,0 +1,27 @@
+%label {
+    display: inline-block;
+    padding: $sm-padding;
+    transform: scale(0.75);
+  }
+  %hover {
+    &:hover {
+      background-color: $aqua;
+    }
+  }
+  %full-viewport {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  %transition-opacity {
+    &.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    &.hide {
+      opacity: 0;
+    }
+  }
+  

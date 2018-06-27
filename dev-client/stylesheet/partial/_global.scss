@@ -1,0 +1,53 @@
+$colors-map: (
+  navy: $navy,
+  blue: $blue,
+  aqua: $aqua,
+  teal: $teal,
+  olive: $olive,
+  green: $green,
+  lime: $lime,
+  yellow: $yellow,
+  orange: $orange,
+  red: $red,
+  fuchsia: $fuchsia,
+  purple: $purple,
+  maroon: $maroon,
+  white: $white,
+  gray: $gray,
+  silver: $silver,
+  black: $black
+);
+$c-colors-map: (
+  c-bg: 'background-color',
+  c: 'color',
+  c-border: 'border-color',
+  c-fill: 'fill',
+  c-stroke: 'stroke'
+);
+@each $color-key, $color-val in $colors-map {
+  @each $c-key, $c-val in $c-colors-map {
+    .#{$c-key}-#{$color-key} {
+      #{$c-val}: $color-val;
+    }
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: $cn-font;
+  font-size: 14px;
+}
+input {
+  outline: 0;
+  padding: 0 $padding;
+  border: $gray-border;
+  height: $input-height;
+  &:focus {
+    border: $blue-border;
+  }
+}

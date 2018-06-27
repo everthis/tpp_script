@@ -44,7 +44,7 @@ function isOdd(num) {
  * @param {Array} arr
  * @return {Array}
  */
-function resultOfRow(arr, num) {
+function resultOfRow(arr = [], num) {
   return availableConsecutiveSeatsInRow(bestInRow(arr), num)
 }
 function bestInRow(arr, arrLen = arr.length) {
@@ -63,7 +63,6 @@ function availableConsecutiveSeatsInRow(arr, num) {
   const arrLen = arr.length
   let consecutiveAvaiableSeatNum = 0
   let isPreviousSeatAvaiable = false
-
   for (let i = 0; i < arrLen; i++) {
     if (arr[i].status === '1') {
       consecutiveAvaiableSeatNum += 1

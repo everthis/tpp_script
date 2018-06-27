@@ -1,0 +1,147 @@
+@import './function';
+$directions: 'top', 'right', 'bottom', 'left';
+$size: '', 'sm', 'xsm';
+$type: 'padding', 'margin';
+$type-alias: 'pad', 'gap';
+$gap-size: $gap, $sm-gap, $xsm-gap;
+$pad-size: $pad, $sm-pad, $xsm-pad;
+@each $direct in $directions {
+  @each $t in $type {
+    $i: index($type, $t);
+    $pg: pad-or-gap($pad-size, $gap-size, $i);
+    @each $s in $size {
+      $m: index($size, $s);
+      .c-#{nth($type-alias, $i)}-#{calc-cls-suffix($direct, $s)} {
+        #{$t}-#{unquote($direct)}: nth($pg, $m);
+      }
+    }
+  }
+}
+
+.c-center {
+  text-align: center;
+}
+.c-bdr-bottom {
+  border-bottom: $white-border;
+}
+.c-xsm-gap {
+  margin: $xsm-gap;
+}
+.c-pad {
+  padding: $pad;
+}
+.c-sm-pad {
+  padding: $sm-pad;
+}
+.c-hori-pad {
+  padding-left: $pad;
+  padding-right: $pad;
+}
+.c-sm-hori-pad {
+  padding-left: $sm-pad;
+  padding-right: $sm-pad;
+}
+.c-sm-vert-pad {
+  padding-top: $sm-pad;
+  padding-bottom: $sm-pad;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.c-sm-bdrs {
+  border-radius: $sm-bdrs;
+}
+
+.c-pad-vert {
+  @extend .c-pad-bottom;
+  @extend .c-pad-top;
+}
+
+.c-sm-gap-vert {
+  @extend .c-gap-top-sm;
+  @extend .c-gap-bottom-sm;
+}
+
+.c-sm-gap-hori {
+  @extend .c-gap-left-sm;
+  @extend .c-gap-right-sm;
+}
+.c-gap-vert {
+  @extend .c-gap-top;
+  @extend .c-gap-bottom;
+}
+.c-sm-gap {
+  margin: $sm-gap;
+}
+.c-align-r {
+  text-align: right;
+}
+.c-link {
+  @extend .c-bdr-bottom;
+  @extend .c-sm-pad;
+  cursor: pointer;
+}
+.c-btn {
+  display: inline-block;
+  @extend .c-sm-pad;
+  @extend .c-pointer;
+  border: $mid-blue-border;
+  background-color: $white;
+  box-shadow: $btn-box-shadow;
+  color: $blue;
+  font-size: $font-size;
+  font-weight: $bold-font-weight;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+.c-card {
+  @extend .c-sm-pad;
+  @extend .c-sm-bdrs;
+  border: $navy-border;
+}
+.c-block-a {
+  display: block;
+}
+.c-loading-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $sc-top;
+  .c-loading-bar-inner-color-primary {
+    background-color: $blue;
+  }
+  .c-loading-bar-inner-failed-color-error {
+    background-color: $red;
+  }
+}
+.c-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  opacity: 0.6;
+}
+.c-icon {
+  fill: currentColor;
+}
+.c-icon-fit {
+  width: 100%;
+  height: 100%;
+}
+.c-relative {
+  position: relative;
+}
+.c-hide {
+  display: none;
+}
+.c-fieldset {
+  border: 1px solid $black;
+}

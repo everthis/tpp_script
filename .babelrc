@@ -1,0 +1,17 @@
+{
+    "presets": [
+        ["babel-preset-env", {
+            "targets": {
+                "chrome": 63
+            },
+            "modules": false,
+            "useBuiltIns": true
+        }]
+    ],
+    "plugins": ["transform-object-rest-spread", "syntax-dynamic-import"],
+    "env": {
+        "test": {
+            "plugins": ["transform-es2015-modules-commonjs"]
+        }
+    }
+}

@@ -14,7 +14,7 @@ const router = new Router({
 const cstate = {
   tbCookie: ''
 }
-const job = schedule.scheduleJob('*/1 * * * *', async function() {
+const job = schedule.scheduleJob('*/10 * * * *', async function() {
   log(chalk.magenta('The answer to life, the universe, and everything!'))
 })
 headlessLogin().then(tbCookie => {

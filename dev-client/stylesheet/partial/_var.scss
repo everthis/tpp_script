@@ -1,0 +1,51 @@
+$navy: #001f3f;
+$blue: #0074d9;
+$aqua: #7fdbff;
+$teal: #39cccc;
+$olive: #3d9970;
+$green: #2ecc40;
+$lime: #01ff70;
+$yellow: #ffdc00;
+$orange: #ff851b;
+$red: #ff4136;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$maroon: #85144b;
+$white: #ffffff;
+$gray: #aaaaaa;
+$silver: #dddddd;
+$black: #111111;
+$paper: #f4f7e7;
+$code-bg: #f7f7f9;
+
+$border-width: 1px;
+$mid-border-width: 2px;
+$sm-bdrs: 4px;
+$round-bdrs: 50%;
+$white-border: $border-width solid $white;
+$black-border: $border-width solid $black;
+$gray-border: $border-width solid $gray;
+$dash-gray-border: $border-width dashed $gray;
+$navy-border: $border-width solid $navy;
+$mid-blue-border: $mid-border-width solid $blue;
+$blue-border: $border-width solid $blue;
+$btn-box-shadow: 1px 1px 4px 1px #ddd;
+$box-shadow-prefix: 1px 1px 4px 1px;
+$sm-padding: 5px;
+$pad: 12px;
+$sm-pad: $sm-padding;
+$xsm-pad: 0.2em;
+$padding: 12px;
+$pad: $padding;
+$sm-gap: 8px;
+$gap: 12px;
+$font-size: 14px;
+$bold-font-weight: 700;
+$xsm-gap: 0.2em;
+$cn-font: 'Hiragino Sans GB', '华文细黑', 'STHeiti', '微软雅黑',
+  'Microsoft YaHei', 'SimHei', 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+$input-height: 24px;
+
+$mask-opacity: 0.5;
+/* stacking context level */
+$sc-top: 9;

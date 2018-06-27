@@ -1,0 +1,12 @@
+@mixin ratio_box($width, $width_ratio: 1, $height_ratio: 1) {
+    display: block;
+    width: $width;
+    height: 0;
+    padding-top: percentage($height_ratio / $width_ratio);
+  }
+  @mixin square($len) {
+    display: inline-block;
+    width: $len;
+    height: $len;
+  }
+  

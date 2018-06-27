@@ -1,0 +1,14 @@
+[
+    {
+      "label": "首页",
+      "path": "/",
+      "component": "homepage"
+    },
+    {
+      "label": "配置",
+      "path": "/config",
+      "component": "config",
+      "privilege": "admin"
+    }
+  ]
+  

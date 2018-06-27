@@ -11,15 +11,6 @@
     <div id="J_seatTop" class="dy-list" dy-mode="flat chip iconlist"></div>
     <div id="J_xseat"></div>
     <div id="J_confirm" class="confirm-block"></div>
-    <div id="app">
-        <div class="content" v-if="showContent"></div>
-        <div class="alphabet-wrap">
-            <span class="alphabet" v-for="(el, prop) in cityCodes"
-            @click="alphabetChange(el)">{{prop}}</span>
-        </div>
-        <div class="city-wrap">
-            <span class="city" v-for="(el, idx) in alphabetZone">{{alphabetZone.length}}</span>
-        </div>
-    </div>
+    <div id="app"></div>
 </body>
 </html>

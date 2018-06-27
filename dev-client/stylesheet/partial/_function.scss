@@ -1,0 +1,16 @@
+@function calc-cls-suffix($direction, $size) {
+    @if ($size == '') {
+      @return $direction;
+    } @else {
+      @return #{$direction}-#{$size};
+    }
+  }
+  
+  @function pad-or-gap($pad, $gap, $idx) {
+    @if ($idx == 1) {
+      @return $pad;
+    } @else {
+      @return $gap;
+    }
+  }
+  
