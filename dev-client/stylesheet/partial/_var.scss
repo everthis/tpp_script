@@ -45,6 +45,8 @@ $xsm-gap: 0.2em;
 $cn-font: 'Hiragino Sans GB', '华文细黑', 'STHeiti', '微软雅黑',
   'Microsoft YaHei', 'SimHei', 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 $input-height: 24px;
+$timing-function: linear;
+$transiton-duration: .3s;
 
 $mask-opacity: 0.5;
 /* stacking context level */
