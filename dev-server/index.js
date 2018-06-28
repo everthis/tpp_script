@@ -3,6 +3,8 @@ const Router = require('koa-router')
 const schedule = require('node-schedule')
 const chalk = require('chalk')
 const getShowsByCityCode = require('../getShowsByCityCode')
+const getCinemaListInPage = require('../getCinemaListInPage')
+const getCinemaSchedule = require('../getCinemaSchedule')
 const headlessLogin = require('../headlessLogin')
 const getAllRegion = require('../getAllRegion')
 const { parse, stringify } = JSON
@@ -15,7 +17,7 @@ const router = new Router({
 const cstate = {
   tbCookie: ''
 }
-const job = schedule.scheduleJob('*/20 * * * *', async function() {
+const job = schedule.scheduleJob('*/10 * * * *', async function() {
   await headlessLogin().then(s => {
     cstate.tbCookie = s
     log(chalk.magenta('tbCookie refreshed!'))
@@ -44,6 +46,23 @@ headlessLogin().then(tbCookie => {
       citycode: crq.cityCode
     })
     ctx.body = stringify(shows)
+  })
+  router.get('/getCinemaListInPage', async (ctx, next) => {
+    const { showId, pageIndex, pageSize, cityCode } = ctx.request.query
+    const cinemas = await getCinemaListInPage(ctx.state.tbCookie, {
+      showId,
+      pageIndex,
+      pageSize,
+      cityCode
+    })
+    ctx.body = stringify(cinemas)
+  })
+  router.get('/getCinemaSchedule', async (ctx, next) => {
+    const { cinemaId } = ctx.request.query
+    const schedules = await getCinemaSchedule(ctx.state.tbCookie, {
+      cinemaId
+    })
+    ctx.body = stringify(schedules)
   })
   router.get('/schedules', async (ctx, next) => {
     ctx.body = stringify({ status: 'ok' })

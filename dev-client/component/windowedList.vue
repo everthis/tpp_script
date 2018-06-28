@@ -8,9 +8,10 @@
       </span>
       <div ref="list-window" class="list-window">
         <div ref="wrap" class="wrap" :style="wrapStyle">
-          <span class="list-item c-xsm-gap c-xsm-pad c-ellipsis"
+          <span
+          :class="['list-item', 'c-xsm-gap', 'c-sm-pad', 'c-ellipsis', currentItem === el ? 'active' : '']"
           v-for="(el, prop) in componentData" :key="prop"
-          @click="currentItemChange(el, prop)"
+          @click="currentItemChangeWrap(el, prop)"
           >{{ displayProp ? el[displayProp] : prop }}</span>
         </div>
       </div>
@@ -37,6 +38,7 @@ export default {
     return {
       iconLen: '1.2em',
       wrapOffset: 0,
+      currentItem: null,
       leftArrow,
       rightArrow
     }
@@ -60,6 +62,10 @@ export default {
     }
   },
   methods: {
+    currentItemChangeWrap(el, prop) {
+      this.currentItem = el
+      this.currentItemChange(el, prop)
+    },
     move(dir) {
       const step = 190
       const diff =
@@ -97,12 +103,19 @@ export default {
   transition: transform $transiton-duration $timing-function;
 }
 .list-item {
-  @include circle(3em);
+  display: inline-block;
+  min-width: 3em;
+  border-radius: 1.5em;
   line-height: calc(3em - 2 * #{$xsm-pad});
   text-align: center;
+  user-select: none;
   background-color: $aqua;
   &:hover {
     cursor: pointer;
+  }
+  &.active {
+    background-color: $blue;
+    color: $white;
   }
 }
 .move-arrow {

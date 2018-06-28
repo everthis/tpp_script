@@ -31,18 +31,25 @@ const SHOWS_BY_CITYCODE_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopshowapi.getshowsbycitycode/4.0/'
 const CINEMA_LIST_IN_PAGE_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopcinemaapi.getcinemalistinpage/7.5/'
+const CINEMA_SCHEDULE_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopscheduleapi.getcinemaschedules/7.0/'
+const VERIFY_CINEMA_SCHEDULE_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopscheduleapi.getcinemaschedules/7.0/_____tmd_____/verify/'
+const NO_CAPTCHA_URL = 'https://cf.aliyun.com/nocaptcha/analyze.jsonp'
 module.exports = {
   APP_KEY,
   USER_AGENT,
   TB_LOGIN_URL,
   LOCK_SEAT_URL,
   PAY_CHECK_URL,
+  NO_CAPTCHA_URL,
   ALL_REGION_URL,
   MY_TB_PAGE_URL,
   USER_SIMPLE_URL,
   PLACE_ORDER_URL,
   LOGIN_IFRAME_URL,
   TPP_USER_SIMPLE_URL,
+  CINEMA_SCHEDULE_URL,
   TPP_SCHEDULE_SEAT_URL,
   SET_MISSING_TOKEN_URL,
   SHOWS_BY_CITYCODE_URL,

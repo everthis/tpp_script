@@ -1,23 +1,14 @@
 const calcSign = require('./tb/calcSign')
 const tbFetch = require('./util/tbFetch')
-const { APP_KEY, CINEMA_LIST_IN_PAGE_URL } = require('./util/constant')
+const { APP_KEY, CINEMA_SCHEDULE_URL } = require('./util/constant')
 const tsFunc = require('./util/index').ts
-function genQsObj(cookieStr, { showId, pageIndex, pageSize, cityCode }) {
+function genQsObj(cookieStr, { cinemaId }) {
   const ts = tsFunc()
   const dataObj = {
-    pageSize,
-    pageIndex,
-    pageCode: 'APP_SHOW_CINEMA',
-    regionName: '',
-    support: 0,
-    showTime: '',
-    sortType: 1,
-    brandCode: '',
-    showDate: 0,
-    cityCode,
-    longitude: 0,
-    latitude: 0,
-    showId,
+    cinemaId,
+    hall: '',
+    showVersion: '',
+    h5AccessFlag: 0,
     platform: '8'
   }
   const dataStr = JSON.stringify(dataObj)
@@ -26,8 +17,8 @@ function genQsObj(cookieStr, { showId, pageIndex, pageSize, cityCode }) {
     appKey: APP_KEY,
     t: ts,
     sign: calcSign(cookieStr, ts, APP_KEY, dataStr),
-    api: 'mtop.film.MtopCinemaAPI.getCinemaListInPage',
-    v: '7.5',
+    api: 'mtop.film.MtopScheduleAPI.getCinemaSchedules',
+    v: '7.0',
     timeout: 10000,
     forceAntiCreep: false,
     AntiCreep: false,
@@ -40,12 +31,12 @@ function genQsObj(cookieStr, { showId, pageIndex, pageSize, cityCode }) {
  *
  * @param {string} cookieStr
  */
-function getCinemaListInPage(cookieStr, payload) {
+function getCinemaSchedule(cookieStr, payload) {
   const qsObj = genQsObj(cookieStr, payload)
   return tbFetch({
     cookie: cookieStr,
-    url: CINEMA_LIST_IN_PAGE_URL,
+    url: CINEMA_SCHEDULE_URL,
     qsObj
   })
 }
-module.exports = getCinemaListInPage
+module.exports = getCinemaSchedule
