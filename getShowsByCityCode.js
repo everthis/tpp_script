@@ -1,6 +1,6 @@
 const calcSign = require('./tb/calcSign')
 const tbFetch = require('./util/tbFetch')
-const { APP_KEY, ALL_REGION_URL } = require('./util/constant')
+const { APP_KEY, SHOWS_BY_CITYCODE_URL } = require('./util/constant')
 const tsFunc = require('./util/index').ts
 function genQsObj(cookieStr, { pageIndex, pagesize, citycode }) {
   const ts = tsFunc()
@@ -37,7 +37,7 @@ function getShowsByCityCode(cookieStr, payload) {
   const qsObj = genQsObj(cookieStr, payload)
   return tbFetch({
     cookie: cookieStr,
-    url: ALL_REGION_URL,
+    url: SHOWS_BY_CITYCODE_URL,
     qsObj
   })
 }

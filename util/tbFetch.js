@@ -1,6 +1,5 @@
 const fetch = require('node-fetch')
 const querystring = require('querystring')
-const calcSign = require('../tb/calcSign')
 
 function tbFetch({ cookie, url, qsObj }) {
   return fetch(`${url}?${querystring.stringify(qsObj)}`, {

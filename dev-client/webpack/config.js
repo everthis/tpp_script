@@ -14,10 +14,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.vue']
-    // modules: ['node_modules', 'bower_components', 'web_modules']
-    // alias: {
-    //   vue$: 'vue/dist/vue.esm.js'
-    // }
   },
   module: {
     rules: [
@@ -66,6 +62,18 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: ['babel-preset-env']
+        }
+      },
+      // https://github.com/webpack-contrib/url-loader/issues/6
+      // {
+      //   test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+      //   use: 'url-loader?limit=10000&mimetype=image/svg+xml'
+      // },
+      {
+        test: /\.svg$/,
+        loader: 'file-loader',
+        options: {
+          name: 'asset/[hash].[ext]'
         }
       }
     ]

@@ -27,6 +27,10 @@ const SET_MISSING_TOKEN_URL =
   'http://h5api.m.taobao.com/h5/mtop.taobao.baichuan.smb.get/1.0/'
 const ALL_REGION_URL =
   'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopregionapi.getallregion/4.0/'
+const SHOWS_BY_CITYCODE_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopshowapi.getshowsbycitycode/4.0/'
+const CINEMA_LIST_IN_PAGE_URL =
+  'https://acs.m.taopiaopiao.com/h5/mtop.film.mtopcinemaapi.getcinemalistinpage/7.5/'
 module.exports = {
   APP_KEY,
   USER_AGENT,
@@ -41,6 +45,8 @@ module.exports = {
   TPP_USER_SIMPLE_URL,
   TPP_SCHEDULE_SEAT_URL,
   SET_MISSING_TOKEN_URL,
+  SHOWS_BY_CITYCODE_URL,
+  CINEMA_LIST_IN_PAGE_URL,
   TB_USER_SIMPLE_INFO_URL,
   CHECK_IN_PROGRESS_ORDER_URL
 }

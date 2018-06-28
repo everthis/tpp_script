@@ -1,22 +1,33 @@
 <template>
   <div>
     <div class="row">
-      <span v-if="showArrow" class="move-arrow move-left c-center"
-      @click="move('left')">left</span>
-      <div ref="window" class="window">
+      <span class="move-arrow move-left c-center c-non-select"
+      v-if="showArrow" @click="move('left')">
+        <inline-svg-icon :src="leftArrow"
+        :width="iconLen" :height="iconLen"></inline-svg-icon>
+      </span>
+      <div ref="list-window" class="list-window">
         <div ref="wrap" class="wrap" :style="wrapStyle">
-          <span class="list-item c-xsm-gap" v-for="(el, prop) in componentData"
-          :key="prop" @click="currentItemChange(el, prop)"
+          <span class="list-item c-xsm-gap c-xsm-pad c-ellipsis"
+          v-for="(el, prop) in componentData" :key="prop"
+          @click="currentItemChange(el, prop)"
           >{{ displayProp ? el[displayProp] : prop }}</span>
         </div>
       </div>
-      <span v-if="showArrow" class="move-arrow move-right c-center"
-      @click="move('right')">right</span>
+      <span class="move-arrow move-right c-center c-non-select"
+      v-if="showArrow" @click="move('right')">
+        <inline-svg-icon :src="rightArrow"
+        :width="iconLen" :height="iconLen"></inline-svg-icon>
+      </span>
     </div>
   </div>
 </template>
 <script>
+import leftArrow from '../asset/left-arrow.svg'
+import rightArrow from '../asset/right-arrow.svg'
+import InlineSvgIcon from './inlineSvgIcon'
 export default {
+  components: { InlineSvgIcon },
   props: {
     displayProp: { type: String, default: '' },
     componentData: { type: [Object, Array] },
@@ -24,7 +35,10 @@ export default {
   },
   data() {
     return {
-      wrapOffset: 0
+      iconLen: '1.2em',
+      wrapOffset: 0,
+      leftArrow,
+      rightArrow
     }
   },
   watch: {
@@ -49,7 +63,7 @@ export default {
     move(dir) {
       const step = 190
       const diff =
-        this.$refs['wrap'].clientWidth - this.$refs['window'].clientWidth
+        this.$refs['wrap'].clientWidth - this.$refs['list-window'].clientWidth
       const diffWidth = diff >= 0 ? diff : 0
       if (dir === 'left') {
         const tmp = this.wrapOffset + step
@@ -72,7 +86,7 @@ export default {
   position: relative;
   margin: 0 4em;
 }
-.window {
+.list-window {
   max-width: 40em;
   overflow: hidden;
 }
@@ -84,7 +98,7 @@ export default {
 }
 .list-item {
   @include circle(3em);
-  line-height: 3em;
+  line-height: calc(3em - 2 * #{$xsm-pad});
   text-align: center;
   background-color: $aqua;
   &:hover {
@@ -96,7 +110,7 @@ export default {
   @extend .c-pointer;
   position: absolute;
   top: $xsm-gap;
-  line-height: 3em;
+  padding: 0.9em;
   background-color: $white;
   box-shadow: 1px 1px 4px 1px $gray;
 }

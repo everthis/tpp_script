@@ -11,7 +11,11 @@
       }
     ]
   ],
-  "plugins": ["transform-object-rest-spread", "syntax-dynamic-import"],
+  "plugins": [
+    "transform-object-rest-spread",
+    "syntax-dynamic-import",
+    "transform-runtime"
+  ],
   "env": {
     "test": {
       "plugins": ["transform-es2015-modules-commonjs"]

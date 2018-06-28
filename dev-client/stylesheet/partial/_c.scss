@@ -17,7 +17,15 @@ $pad-size: $pad, $sm-pad, $xsm-pad;
     }
   }
 }
-
+.c-v-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.c-vh-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .c-center {
   text-align: center;
 }
@@ -26,6 +34,9 @@ $pad-size: $pad, $sm-pad, $xsm-pad;
 }
 .c-xsm-gap {
   margin: $xsm-gap;
+}
+.c-xsm-pad {
+  padding: $xsm-pad;
 }
 .c-pad {
   padding: $pad;
@@ -144,4 +155,12 @@ $pad-size: $pad, $sm-pad, $xsm-pad;
 }
 .c-fieldset {
   border: 1px solid $black;
+}
+.c-non-select {
+  user-select: none;
+}
+.c-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

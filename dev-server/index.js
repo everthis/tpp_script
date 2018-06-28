@@ -2,6 +2,7 @@ const Koa = require('koa')
 const Router = require('koa-router')
 const schedule = require('node-schedule')
 const chalk = require('chalk')
+const getShowsByCityCode = require('../getShowsByCityCode')
 const headlessLogin = require('../headlessLogin')
 const getAllRegion = require('../getAllRegion')
 const { parse, stringify } = JSON
@@ -34,6 +35,15 @@ headlessLogin().then(tbCookie => {
   router.get('/allRegion', async (ctx, next) => {
     const regions = await getAllRegion(ctx.state.tbCookie)
     ctx.body = stringify(regions)
+  })
+  router.get('/getShowsByCityCode', async (ctx, next) => {
+    const crq = ctx.request.query
+    const shows = await getShowsByCityCode(ctx.state.tbCookie, {
+      pageIndex: crq.page,
+      pagesize: crq.pageSize,
+      citycode: crq.cityCode
+    })
+    ctx.body = stringify(shows)
   })
   router.get('/schedules', async (ctx, next) => {
     ctx.body = stringify({ status: 'ok' })
