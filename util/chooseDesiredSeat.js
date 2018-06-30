@@ -133,6 +133,11 @@ function bestInHall(obj, num) {
   return result
 }
 
+function allAvailableInHall(obj) {
+  const { seats } = obj
+  return seats.filter(el => el.status === '1')
+}
+
 function chooseBestSeat(apiData, config = {}) {
   const result = {}
   const { ticketNum: num } = config
@@ -141,10 +146,13 @@ function chooseBestSeat(apiData, config = {}) {
   result.recommend = pickApiRecommend(hallSeat.sectionSeatMapList)
   // choose best in general
   const generalDesiredSeats = []
+  const allAvailableSeats = []
   hallSeat.sectionSeatMapList.forEach(hall => {
     generalDesiredSeats.push(...bestInHall(hall, num))
+    allAvailableSeats.push(...allAvailableInHall(hall))
   })
   result.general = generalDesiredSeats
+  result.allAvailableSeats = allAvailableSeats
   return result
 }
 function getSelectedIds(d) {

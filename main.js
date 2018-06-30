@@ -9,9 +9,9 @@ const payCheck = require('./payCheck')
 const placeOrder = require('./placeOrder')
 
 const ctx = {}
-const scheduleId = '538216828'
+const scheduleId = '540462725'
 const config = {
-  ticketNum: 3
+  ticketNum: 6
 }
 
 headlessLogin()
