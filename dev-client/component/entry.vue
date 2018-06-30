@@ -9,7 +9,6 @@
         </template>
       </transition>
     </div>
-    <div class="footer">footer</div>
   </div>
 </template>
 
@@ -51,7 +50,7 @@ export default {
 .app-container {
   /*display: flex;*/
   display: grid;
-  min-height: 100vh;
+  /*min-height: 100vh; */
   grid:
     'filter filter' 2.5em
     'main main' auto

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c-center">
     <windowed-list :component-data="cityCodes"
     :current-item-change="alphabetChange"></windowed-list>
     <windowed-list :component-data="alphabetZone" :display-prop="displayProp"
@@ -11,14 +11,24 @@
     <windowed-list :component-data="listOfScheduleOfSpecificShow"
     :display-prop="scheduleName"
     :current-item-change="scheduleChange"></windowed-list>
+    <config :show="showConfig" :set-config-fn="setConfigFn"
+    :initConfig="chooseSeatConfig"></config>
   </div>
 </template>
 <script>
 import WindowedList from './windowedList'
+import Config from './config'
 const renderSeat = require('../../tb/renderSeat/index')
+const {
+  chooseBestSeat,
+  getSelectedIds
+} = require('../../util/chooseDesiredSeat')
 import mapConfig from '../javascript/script/seatMapConfig'
 import serialize from '../javascript/common/serialize'
-function anoymous() {}
+function anoymous() {
+  return Promise.resolve()
+}
+
 function initSeat(data, selectedSeatIds) {
   new renderSeat({
     container: '#J_xseat',
@@ -27,8 +37,8 @@ function initSeat(data, selectedSeatIds) {
       Sprite: '//gw.alicdn.com/tfs/TB1_eqPfntYBeNjy1XdXXXXyVXa-512-800.png'
     },
     maxScale: 1,
-    viewWidth: document.body.clientWidth,
-    viewHeight: window.innerHeight,
+    viewWidth: 14 * 52,
+    viewHeight: 900,
     mapConfig: mapConfig,
     selectedSeatIds,
     beforeSelectSeats: anoymous,
@@ -36,9 +46,10 @@ function initSeat(data, selectedSeatIds) {
   })
 }
 export default {
-  components: { WindowedList },
+  components: { WindowedList, Config },
   data() {
     return {
+      showConfig: true,
       showContent: false,
       cityCodes: null,
       alphabetZone: [],
@@ -52,19 +63,21 @@ export default {
       displayProp: 'regionName',
       currentCityCode: undefined,
       currentShowId: undefined,
-      message: ''
-    }
-  },
-  computed: {
-    wrapStyle: function() {
-      return {
-        transform: `translate3d(${this.wrapOffset}px,0,0)`
-      }
+      chooseSeatConfig: {
+        ticketNum: 3,
+        consecutiveInRow: true,
+        onlyCosyZone: true
+      },
+      scheduleSeatApiData: null
     }
   },
   mounted() {},
   beforeDestroy() {},
   methods: {
+    setConfigFn(type, val) {
+      this.chooseSeatConfig[type] = val
+      this.chooseSeatConfigChangedCb(this.chooseSeatConfig)
+    },
     resetListOfShow() {
       this.listOfShow = []
     },
@@ -124,7 +137,6 @@ export default {
       )
     },
     filterAndCombineSchedule(arr) {
-      console.log(arr)
       const result = []
       for (let i = 0; i < arr.length; i++) {
         const dateDesc = arr[i].dateDesc
@@ -138,16 +150,30 @@ export default {
           )
         }
       }
-      console.log(result)
       return result
     },
     scheduleChange(val) {
-      console.log(val)
+      const payload = {
+        scheduleId: val.scheduleId
+      }
+      return this.cfetch(`/tpp/queryScheduleSeat?${serialize(payload)}`).then(
+        d => {
+          this.scheduleSeatApiData = d
+          this.chooseSeatConfigChangedCb(this.chooseSeatConfig)
+        }
+      )
+    },
+    chooseSeatConfigChangedCb(obj) {
+      const targets = chooseBestSeat(this.scheduleSeatApiData, obj)
+      initSeat(
+        this.scheduleSeatApiData.data.returnValue,
+        getSelectedIds(targets)
+      )
     }
   },
   mounted() {
     this.showContent = true
-    this.querySchedule().then(this.getAllRegion)
+    this.getAllRegion()
   }
 }
 </script>

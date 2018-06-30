@@ -5,6 +5,7 @@ const chalk = require('chalk')
 const getShowsByCityCode = require('../getShowsByCityCode')
 const getCinemaListInPage = require('../getCinemaListInPage')
 const getCinemaSchedule = require('../getCinemaSchedule')
+const queryScheduleSeat = require('../queryScheduleSeat')
 const headlessLogin = require('../headlessLogin')
 const getAllRegion = require('../getAllRegion')
 const { parse, stringify } = JSON
@@ -64,8 +65,10 @@ headlessLogin().then(tbCookie => {
     })
     ctx.body = stringify(schedules)
   })
-  router.get('/schedules', async (ctx, next) => {
-    ctx.body = stringify({ status: 'ok' })
+  router.get('/queryScheduleSeat', async (ctx, next) => {
+    const { scheduleId } = ctx.request.query
+    const seats = await queryScheduleSeat(ctx.state.tbCookie, scheduleId)
+    ctx.body = stringify(seats)
   })
 
   app.use(router.routes()).use(router.allowedMethods())

@@ -20,6 +20,7 @@
         <inline-svg-icon :src="rightArrow"
         :width="iconLen" :height="iconLen"></inline-svg-icon>
       </span>
+      <span class="info c-center" v-if="showArrow">{{ rowItemsLength }}个</span>
     </div>
   </div>
 </template>
@@ -31,6 +32,7 @@ export default {
   components: { InlineSvgIcon },
   props: {
     displayProp: { type: String, default: '' },
+    // displayProp为非空字符串，表示componentData是Array，否则是Object
     componentData: { type: [Object, Array] },
     currentItemChange: { type: Function }
   },
@@ -49,6 +51,11 @@ export default {
     }
   },
   computed: {
+    rowItemsLength: function() {
+      return this.displayProp
+        ? this.componentData.length
+        : Object.keys(this.componentData).length
+    },
     showArrow: function() {
       if (this.componentData == null) return false
       return this.displayProp.length === 0
@@ -90,7 +97,7 @@ export default {
 .row {
   display: inline-block;
   position: relative;
-  margin: 0 4em;
+  margin: 0 8em 0 4em;
 }
 .list-window {
   max-width: 40em;
@@ -132,5 +139,14 @@ export default {
 }
 .move-right {
   right: -3.4em;
+}
+.info {
+  display: inline-block;
+  position: absolute;
+  width: 4.5em;
+  height: 3em;
+  top: $xsm-gap;
+  padding: 0.9em 0.2em;
+  right: -7.9em;
 }
 </style>

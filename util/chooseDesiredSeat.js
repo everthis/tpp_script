@@ -64,7 +64,7 @@ function availableConsecutiveSeatsInRow(arr, num) {
   let consecutiveAvaiableSeatNum = 0
   let isPreviousSeatAvaiable = false
   for (let i = 0; i < arrLen; i++) {
-    if (arr[i].status === '1') {
+    if (arr[i] && arr[i].status === '1') {
       consecutiveAvaiableSeatNum += 1
       isPreviousSeatAvaiable = true
       if (i === arrLen - 1) {
@@ -147,9 +147,21 @@ function chooseBestSeat(apiData, config = {}) {
   result.general = generalDesiredSeats
   return result
 }
+function getSelectedIds(d) {
+  const ids = []
+  d.general.forEach(arr => {
+    arr.forEach(el => {
+      if (ids.indexOf(el.seatId) === -1) {
+        ids.push(el.seatId)
+      }
+    })
+  })
+  return ids
+}
 module.exports = {
   calcBestRows,
   chooseBestSeat,
   bestInRow,
+  getSelectedIds,
   availableConsecutiveSeatsInRow
 }

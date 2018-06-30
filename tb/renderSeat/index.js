@@ -64,6 +64,7 @@ function t() {
   var e = this,
     i = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
   r(this, t),
+    (this.canvasTotalHeight = 0),
     (this.config = a({}, i)),
     (this.mapConfig = this.config.mapConfig),
     (this.data = this.config.seatData),
@@ -284,10 +285,11 @@ t.prototype.renderSeatMap = function() {
       }
       t.renderMiddleLine(r)
     }
+    t.canvasTotalHeight += e.h
   }),
     this.renderSeatIndex(),
-    this.setMinScale()
-  // this.setXScroll()
+    this.setMinScale(),
+    this.setXScroll()
 }
 t.prototype.renderFloorHeader = function(t, e) {
   if (this.repository.hasMultiFloor()) {

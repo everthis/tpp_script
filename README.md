@@ -3,6 +3,40 @@
 1.  脚本能迅速筛选出所有符合条件的全场最佳座位，
 2.  能几乎同时对所有“全场最佳”发起锁定请求，无论哪一个请求成功，都是达到目的。
 
+### 选座演示
+
+#### 估计最佳区域
+
+![cosyZone](images/cosyZone.png)
+
+#### VIP 厅
+
+![VIP](images/vipHall.png)
+
+#### 一般厅
+
+![VIP](images/largeHall.png)
+
+#### 多个厅楼下
+
+![VIP](images/multiHallDownstairs.png)
+
+#### 多个厅楼上
+
+![VIP](images/multiHallUpstairs.png)
+
+#### 只需要一个座
+
+![VIP](images/smallHallConsecutive1.png)
+
+#### 需要两个座
+
+![VIP](images/smallHallConsecutive2.png)
+
+#### 需要三个座
+
+![VIP](images/smallHallConsecutive3.png)
+
 ### 备注
 
 对于"XXOOOXOXOOXO"(X 表示不可预定，O 表示可以预定)，在需要 2 个座位的前提下，有三种选择。
