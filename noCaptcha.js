@@ -7,3 +7,17 @@ n: 109#3LCa7OTqap0GxBuLpB/yC0Tp6nvERMZcCqXyej8XGMHGr1LSejUWa8e1YBIG/AECrSADWeWB6
 v: 923
 callback: __jsonp_2532512858
  */
+const puppeteer = require('puppeteer')
+const devices = require('puppeteer/DeviceDescriptors');
+const iPhoneX = devices['iPhone X'];
+function noCaptcha(url) {
+    const browser = await puppeteer.launch()
+    const page = await browser.newPage()
+    await page.emulate(iPhoneX);
+    await page.goto(url);
+    // other actions...
+    page.screenshot({path: 'example.png'})
+    await browser.close();
+}
+
+module.exports = noCaptcha

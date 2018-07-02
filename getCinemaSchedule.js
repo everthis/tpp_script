@@ -1,5 +1,6 @@
 const calcSign = require('./tb/calcSign')
 const tbFetch = require('./util/tbFetch')
+const noCaptcha = require('./noCaptcha')
 const { APP_KEY, CINEMA_SCHEDULE_URL } = require('./util/constant')
 const tsFunc = require('./util/index').ts
 function genQsObj(cookieStr, { cinemaId }) {
@@ -37,6 +38,12 @@ function getCinemaSchedule(cookieStr, payload) {
     cookie: cookieStr,
     url: CINEMA_SCHEDULE_URL,
     qsObj
+  }).then(async d => {
+    if (d.data && d.data.url) {
+      await noCaptcha(d.data.url)
+    } else {
+      return d
+    }
   })
 }
 module.exports = getCinemaSchedule
