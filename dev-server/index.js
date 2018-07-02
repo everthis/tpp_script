@@ -16,15 +16,17 @@ const router = new Router({
   prefix: '/tpp'
 })
 const cstate = {
-  tbCookie: ''
+  tbCookie: '',
+  tbCookieArr: []
 }
-const job = schedule.scheduleJob('*/10 * * * *', async function() {
-  await headlessLogin().then(s => {
+const job = schedule.scheduleJob('*/20 * * * *', async function() {
+  await headlessLogin().then(([s, arr]) => {
     cstate.tbCookie = s
+    cstate.tbCookieArr = arr
     log(chalk.magenta('tbCookie refreshed!'))
   })
 })
-headlessLogin().then(tbCookie => {
+headlessLogin().then(([tbCookie]) => {
   log(chalk.green('login successfully.'))
   cstate.tbCookie = tbCookie
   app.use(async (ctx, next) => {

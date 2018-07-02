@@ -32,7 +32,8 @@ function genQsObj(cookieStr, { cinemaId }) {
  *
  * @param {string} cookieStr
  */
-function getCinemaSchedule(cookieStr, payload) {
+function getCinemaSchedule(state, payload) {
+  const { tbCookie: cookieStr } = state
   const qsObj = genQsObj(cookieStr, payload)
   return tbFetch({
     cookie: cookieStr,
@@ -40,7 +41,7 @@ function getCinemaSchedule(cookieStr, payload) {
     qsObj
   }).then(async d => {
     if (d.data && d.data.url) {
-      await noCaptcha(d.data.url)
+      return await noCaptcha(state, d)
     } else {
       return d
     }

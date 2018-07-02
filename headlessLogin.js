@@ -32,7 +32,7 @@ async function headlessLogin() {
   const cookies = await page.cookies()
 
   await browser.close()
-  return cookiesArrToStr(cookies)
+  return [cookiesArrToStr(cookies), cookies]
 }
 
 module.exports = headlessLogin

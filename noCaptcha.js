@@ -8,16 +8,35 @@ v: 923
 callback: __jsonp_2532512858
  */
 const puppeteer = require('puppeteer')
-const devices = require('puppeteer/DeviceDescriptors');
-const iPhoneX = devices['iPhone X'];
-function noCaptcha(url) {
-    const browser = await puppeteer.launch()
-    const page = await browser.newPage()
-    await page.emulate(iPhoneX);
-    await page.goto(url);
-    // other actions...
-    page.screenshot({path: 'example.png'})
-    await browser.close();
+const devices = require('puppeteer/DeviceDescriptors')
+const iPhoneX = devices['iPhone X']
+function delay(time) {
+  return new Promise(function(resolve) {
+    setTimeout(resolve, time)
+  })
+}
+async function noCaptcha(punishUrl, { tbCookie, apiData }) {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  await page.emulate(iPhoneX)
+  await page.goto(punishUrl)
+
+  const label = await page.$('.slider .label')
+  const btn = await page.$('.slider .button')
+  const btnBox = await btn.boundingBox()
+  const labelBox = await label.boundingBox()
+  await page.mouse.move(
+    btnBox.x + btnBox.width / 2,
+    btnBox.y + btnBox.height / 2
+  )
+  await page.mouse.down()
+  await page.mouse.move(btnBox.x + labelBox.width, btnBox.y + btnBox.height / 2)
+  await page.mouse.up()
+
+  await delay(2000)
+  await page.screenshot({ path: 'example.png' })
+  await browser.close()
+  return apiData
 }
 
 module.exports = noCaptcha

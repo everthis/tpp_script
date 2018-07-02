@@ -15,7 +15,7 @@ const config = {
 }
 
 headlessLogin()
-  .then(s => {
+  .then(([s]) => {
     ctx.cookie = s
     return queryScheduleSeat(s, scheduleId)
   })
