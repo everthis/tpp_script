@@ -3,7 +3,7 @@ const LOGIN_IFRAME_URL =
 
 const APP_KEY = '12574478'
 const USER_AGENT =
-  'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1'
+  'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
 const TB_LOGIN_URL = 'https://login.m.taobao.com/login.htm'
 const MY_TB_PAGE_URL =
   'http://h5.m.taobao.com/mlapp/mytaobao.html#mlapp-mytaobao'

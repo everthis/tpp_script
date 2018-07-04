@@ -16,10 +16,10 @@ callback: mtopjsonp5
 data: {"platform":"8"}
  */
 
-const calcSign = require('./tb/calcSign')
-const tbFetch = require('./util/tbFetch')
-const { APP_KEY, PAY_CHECK_URL } = require('./util/constant')
-const tsFunc = require('./util/index').ts
+const calcSign = require('../tb/calcSign')
+const tbFetch = require('../util/tbFetch')
+const { APP_KEY, PAY_CHECK_URL } = require('../util/constant')
+const tsFunc = require('../util/index').ts
 function genQsObj(cookieStr, obj) {
   const ts = tsFunc()
   const applyKeySplitter = ', '
@@ -59,7 +59,7 @@ function genQsObj(cookieStr, obj) {
  * @param {string} cookieStr
  * @param {string} scheduleId
  */
-function lockSeat(cookieStr, scheduleId) {
+function checkInProgressOrder(cookieStr, scheduleId) {
   const qsObj = genQsObj(cookieStr, scheduleId)
   return tbFetch({
     cookie: cookieStr,
@@ -67,4 +67,4 @@ function lockSeat(cookieStr, scheduleId) {
     qsObj
   })
 }
-module.exports = lockSeat
+module.exports = checkInProgressOrder

@@ -1,8 +1,7 @@
 require('dotenv').config()
 const puppeteer = require('puppeteer')
-const { TB_LOGIN_URL, USER_AGENT, MY_TB_PAGE_URL } = require('./util/constant')
-const cookiesArrToStr = require('./util/cookiesArrToStr')
-const processPossibleMissingToken = require('./processPossibleMissingToken')
+const { TB_LOGIN_URL, USER_AGENT, MY_TB_PAGE_URL } = require('../util/constant')
+const cookiesArrToStr = require('../util/cookiesArrToStr')
 const TB_USERNAME = process.env.TB_USERNAME
 const TB_PASSWORD = process.env.TB_PASSWORD
 

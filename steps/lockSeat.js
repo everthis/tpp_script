@@ -1,7 +1,7 @@
-const calcSign = require('./tb/calcSign')
-const tbFetch = require('./util/tbFetch')
-const { APP_KEY, LOCK_SEAT_URL } = require('./util/constant')
-const tsFunc = require('./util/index').ts
+const calcSign = require('../tb/calcSign')
+const tbFetch = require('../util/tbFetch')
+const { APP_KEY, LOCK_SEAT_URL } = require('../util/constant')
+const tsFunc = require('../util/index').ts
 function genQsObj(cookieStr, { scheduleId, mobile, seatIDs, seatNames }) {
   const ts = tsFunc()
   const dataObj = {

@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
 const { log } = console
-const { USER_AGENT } = require('./util/constant')
+const { USER_AGENT } = require('.../util/constant')
 fetch('https://www.baidu.com', {
   headers: {
     'user-agent': USER_AGENT

@@ -1,7 +1,7 @@
-const calcSign = require('./tb/calcSign')
-const tbFetch = require('./util/tbFetch')
-const { APP_KEY, TB_USER_SIMPLE_INFO_URL } = require('./util/constant')
-const tsFunc = require('./util/index').ts
+const calcSign = require('../tb/calcSign')
+const tbFetch = require('../util/tbFetch')
+const { APP_KEY, TB_USER_SIMPLE_INFO_URL } = require('../util/constant')
+const tsFunc = require('../util/index').ts
 function genQsObj(cookieStr) {
   const ts = tsFunc()
   const dataObj = { pageName: 'index' }

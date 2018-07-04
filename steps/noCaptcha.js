@@ -15,26 +15,49 @@ function delay(time) {
     setTimeout(resolve, time)
   })
 }
-async function noCaptcha(punishUrl, { tbCookie, apiData }) {
+async function singleMove(page) {
+  await page.mouse.move(x, y)
+}
+async function noCaptcha({ tbCookie, tbCookieArr }, apiData) {
+  const { url: punishUrl } = apiData.data
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.emulate(iPhoneX)
+  await page.setCookie(...tbCookieArr)
   await page.goto(punishUrl)
+  console.log(punishUrl)
 
   const label = await page.$('.slider .label')
   const btn = await page.$('.slider .button')
   const btnBox = await btn.boundingBox()
   const labelBox = await label.boundingBox()
-  await page.mouse.move(
-    btnBox.x + btnBox.width / 2,
-    btnBox.y + btnBox.height / 2
-  )
+  const initCoord = {
+    x: btnBox.x + btnBox.width / 2,
+    y: btnBox.y + btnBox.height / 2
+  }
+  await page.mouse.move(initCoord.x, initCoord.y)
   await page.mouse.down()
-  await page.mouse.move(btnBox.x + labelBox.width, btnBox.y + btnBox.height / 2)
+  const distance = Math.floor(btnBox.x + labelBox.width - btnBox.width) + 10
+  for (
+    let i = 0, stepLen = 1;
+    stepLen < distance;
+    i++, stepLen += Math.floor(100 * Math.random())
+  ) {
+    await page.mouse.move(
+      initCoord.x + stepLen,
+      initCoord.y + 5 * Math.random()
+    )
+  }
+  await page.mouse.move(
+    btnBox.x + labelBox.width - btnBox.width + 10,
+    initCoord.y
+  )
+  await page.screenshot({ path: `captcha-last.png` })
   await page.mouse.up()
 
   await delay(2000)
-  await page.screenshot({ path: 'example.png' })
+  const cc = await page.cookies()
+  console.log(cc)
   await browser.close()
   return apiData
 }

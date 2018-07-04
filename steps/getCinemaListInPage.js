@@ -1,7 +1,7 @@
-const calcSign = require('./tb/calcSign')
-const tbFetch = require('./util/tbFetch')
-const { APP_KEY, CINEMA_LIST_IN_PAGE_URL } = require('./util/constant')
-const tsFunc = require('./util/index').ts
+const calcSign = require('../tb/calcSign')
+const tbFetch = require('../util/tbFetch')
+const { APP_KEY, CINEMA_LIST_IN_PAGE_URL } = require('../util/constant')
+const tsFunc = require('../util/index').ts
 function genQsObj(cookieStr, { showId, pageIndex, pageSize, cityCode }) {
   const ts = tsFunc()
   const dataObj = {

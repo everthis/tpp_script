@@ -1,14 +1,14 @@
 const FormData = require('form-data')
 const querystring = require('querystring')
-const calcSign = require('./tb/calcSign')
-const cookiesArrToStr = require('./util/cookiesArrToStr')
+const calcSign = require('../tb/calcSign')
+const cookiesArrToStr = require('../util/cookiesArrToStr')
 const {
   USER_AGENT,
   SET_MISSING_TOKEN_URL,
   APP_KEY
-} = require('./util/constant')
+} = require('../util/constant')
 const fetch = require('node-fetch')
-const tsFunc = require('./util/index').ts
+const tsFunc = require('../util/index').ts
 async function processPossibleMissingToken(arr, ctx) {
   const mH5Token = arr.find(el => el.name === '_m_h5_tk')
   if (mH5Token == null) {

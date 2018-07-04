@@ -1,5 +1,5 @@
 const tppUserSimple = require('./tppUserSimple')
-const { chooseBestSeat } = require('./util/chooseDesiredSeat')
+const { chooseBestSeat } = require('../util/chooseDesiredSeat')
 function preLockSeat(scheduleSeatApiData, { ticketNum }) {
   const combinations = chooseBestSeat(scheduleSeatApiData, {
     ticketNum

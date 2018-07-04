@@ -2,12 +2,12 @@ const Koa = require('koa')
 const Router = require('koa-router')
 const schedule = require('node-schedule')
 const chalk = require('chalk')
-const getShowsByCityCode = require('../getShowsByCityCode')
-const getCinemaListInPage = require('../getCinemaListInPage')
-const getCinemaSchedule = require('../getCinemaSchedule')
-const queryScheduleSeat = require('../queryScheduleSeat')
-const headlessLogin = require('../headlessLogin')
-const getAllRegion = require('../getAllRegion')
+const getShowsByCityCode = require('../steps/getShowsByCityCode')
+const getCinemaListInPage = require('../steps/getCinemaListInPage')
+const getCinemaSchedule = require('../steps/getCinemaSchedule')
+const queryScheduleSeat = require('../steps/queryScheduleSeat')
+const headlessLogin = require('../steps/headlessLogin')
+const getAllRegion = require('../steps/getAllRegion')
 const { parse, stringify } = JSON
 const { log } = console
 
@@ -26,9 +26,10 @@ const job = schedule.scheduleJob('*/20 * * * *', async function() {
     log(chalk.magenta('tbCookie refreshed!'))
   })
 })
-headlessLogin().then(([tbCookie]) => {
+headlessLogin().then(([tbCookie, tbCookieArr]) => {
   log(chalk.green('login successfully.'))
   cstate.tbCookie = tbCookie
+  cstate.tbCookieArr = tbCookieArr
   app.use(async (ctx, next) => {
     ctx.state = cstate
     await next()
@@ -62,7 +63,7 @@ headlessLogin().then(([tbCookie]) => {
   })
   router.get('/getCinemaSchedule', async (ctx, next) => {
     const { cinemaId } = ctx.request.query
-    const schedules = await getCinemaSchedule(ctx.state.tbCookie, {
+    const schedules = await getCinemaSchedule(ctx.state, {
       cinemaId
     })
     ctx.body = stringify(schedules)

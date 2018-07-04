@@ -1,4 +1,4 @@
 {
-  "watch": ["dev-server"],
+  "watch": ["dev-server", "steps", "tb", "util"],
   "ext": "js"
 }
