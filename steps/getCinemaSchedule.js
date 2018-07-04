@@ -41,8 +41,8 @@ function getCinemaSchedule(state, payload) {
     qsObj
   }).then(async d => {
     if (d.data && d.data.url) {
-      return d
-      return await noCaptcha(state, d)
+      // return d
+      return await noCaptcha(state, d, getCinemaSchedule, payload)
     } else {
       return d
     }
