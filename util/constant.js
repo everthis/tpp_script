@@ -5,6 +5,8 @@ const APP_KEY = '12574478'
 const USER_AGENT =
   'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
 const TB_LOGIN_URL = 'https://login.m.taobao.com/login.htm'
+const TPP_MOBILE_HOMEPAGE_URL =
+  'https://h5.m.taopiaopiao.com/app/moviemain/pages/index/index.html'
 const MY_TB_PAGE_URL =
   'http://h5.m.taobao.com/mlapp/mytaobao.html#mlapp-mytaobao'
 const TB_USER_SIMPLE_INFO_URL =
@@ -54,6 +56,7 @@ module.exports = {
   SET_MISSING_TOKEN_URL,
   SHOWS_BY_CITYCODE_URL,
   CINEMA_LIST_IN_PAGE_URL,
+  TPP_MOBILE_HOMEPAGE_URL,
   TB_USER_SIMPLE_INFO_URL,
   CHECK_IN_PROGRESS_ORDER_URL
 }

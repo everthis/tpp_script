@@ -8,6 +8,7 @@ const getCinemaSchedule = require('../steps/getCinemaSchedule')
 const queryScheduleSeat = require('../steps/queryScheduleSeat')
 const headlessLogin = require('../steps/headlessLogin')
 const getAllRegion = require('../steps/getAllRegion')
+const postProcessRequest = require('../steps/postProcessRequest')
 const { parse, stringify } = JSON
 const { log } = console
 
@@ -65,7 +66,9 @@ headlessLogin().then(([tbCookie, tbCookieArr]) => {
     const { cinemaId } = ctx.request.query
     const schedules = await getCinemaSchedule(ctx.state, {
       cinemaId
-    })
+    }).then(d =>
+      postProcessRequest(d, ctx.state, getCinemaSchedule, { cinemaId })
+    )
     ctx.body = stringify(schedules)
   })
   router.get('/queryScheduleSeat', async (ctx, next) => {

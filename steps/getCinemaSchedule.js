@@ -39,13 +39,14 @@ function getCinemaSchedule(state, payload) {
     cookie: cookieStr,
     url: CINEMA_SCHEDULE_URL,
     qsObj
-  }).then(async d => {
-    if (d.data && d.data.url) {
-      // return d
-      return await noCaptcha(state, d, getCinemaSchedule, payload)
-    } else {
-      return d
-    }
   })
+  // .then(async d => {
+  //   if (d.data && d.data.url) {
+  //     // return d
+  //     return await noCaptcha(state, d, getCinemaSchedule, payload)
+  //   } else {
+  //     return d
+  //   }
+  // })
 }
 module.exports = getCinemaSchedule

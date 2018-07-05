@@ -10,7 +10,7 @@ const TB_PASSWORD = process.env.TB_PASSWORD
 /**
  * use puppeteer to get wanted cookies
  */
-async function headlessLogin() {
+async function headlessLogin(...cbFnArr) {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.emulate(iPhoneX)
@@ -31,6 +31,13 @@ async function headlessLogin() {
   })
   const cookies = await page.cookies()
 
+  // execute callback functions if they are passed in.
+  // do this procedure before browser.close()
+  if (cbFnArr.length) {
+    for (let fn of cbFnArr) {
+      await fn({ browser, page })
+    }
+  }
   await browser.close()
   return [cookiesArrToStr(cookies), cookies]
 }
