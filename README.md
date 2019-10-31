@@ -82,4 +82,6 @@
 }
 ```
 
+workaround: use `await page.evaluate('() =>{ Object.defineProperties(navigator,{ webdriver:{ get: () => false } }) }')`.
+
 6.  不要前两排和后两排，不要每排两端的一个位置。
