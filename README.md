@@ -86,4 +86,6 @@ workaround: use `await page.evaluate(async () => {
   Object.defineProperty(navigator, 'webdriver', { get: ()=> false });
 });` before page load.
 
+`https://github.com/GoogleChrome/puppeteer/issues/3324`
+
 6.  不要前两排和后两排，不要每排两端的一个位置。
